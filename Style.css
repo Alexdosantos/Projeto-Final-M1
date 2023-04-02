@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,500&family=Roboto&display=swap');
+
+#card-modal{
+    display: flex;
+    flex-direction: column;
+    width: 608px;
+    height: 608px;
+    inset: 0%;
+    align-items: center;
+    gap: 9px;
+    
+    
+    background: #017849;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    border: none;
+
+    
+}
+
+
+
+#card-modal img {
+    width: 321.02px;
+    height: 127.42px;
+    padding-top: 49.5px;
+    padding-bottom: 50px;
+    
+}
+
+#card-modal input {
+    width: 379.04px;
+    height: 47.92px;
+    padding: 13px 10px 13px 13px;
+    
+    
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+}
+
+#card-modal #btn-entrar{
+    width: 379.04px;
+    height: 47.92px;
+    align-items: center;
+    text-align: center;
+    margin-top: 45px;
+    
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    
+    
+
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+
+    cursor: pointer;
+   
+
+}
+
+#card-modal #btn-entrar:hover {
+    background-color: #FFFFFF;
+    color: #017849;
+    transition: .3s;
+}
+
+
+#card-modal label {
+    padding-top: 30px;
+    padding-right: 340px;
+    
+    
+    
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+  
+
+    color: #FFFFFF;
+}
+
+#card-modal .cadastras-login {
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: none;
+    background: transparent;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+#card-modal .cadastras-login:hover {
+    font-size: 19px;
+    color: #ffffff;
+    transition: .3s 
+}
+
