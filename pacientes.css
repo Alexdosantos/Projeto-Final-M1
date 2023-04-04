@@ -138,6 +138,16 @@ div p {
     color: #ffffff;
     border-radius: 30px;
     border: none;
+
+    cursor: pointer;
+}
+
+#novo-cad:hover {
+    background: #ffffff;
+    color: #017849;
+    transition: .3s;
+    border: 1px solid #017849;
+
 }
 
 
@@ -160,7 +170,19 @@ div p {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+
+    cursor: pointer;
 }
+
+.btn-search button:hover {
+    background: #03b16c;
+    color: #fbfdfc;
+    transition: .3s;
+  
+
+
+}
+
 .btn-search  input {
     width: 250px;
     height:47px;
@@ -170,10 +192,12 @@ div p {
     
     border: 1px solid #BDBDBD;
     background: #FFFFFF;
+    outline-color: #017849;
 
 
     box-sizing: border-box;
     border-radius: 24px 0px 0px 24px;
+    border: none;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -182,12 +206,8 @@ div p {
     line-height: 16px;
     
     
-
-    
-
     color: #828282;
 
 
-    
     
 }
