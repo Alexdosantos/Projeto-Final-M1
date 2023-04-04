@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@300;700&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 80px;
+    
+    background: #ffffff;
+    
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+   
+}
+header img {
+    width: 28.85px;
+    height: 44.33px;
+    margin-top: 18.21px;
+    margin-left: 26px;
+}
+.welcome {
+    display: flex;
+    width: 253px;
+    height: 29px;
+    gap: 5px;
+    padding-top: 29px;
+    
+
+    margin-left: 32.73%;
+    margin-right: 2.07%;
+    margin-bottom: 21.88%;
+
+    
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+
+    
+
+    color: #017849;
+}
+
+
+.welcome .bem-vindo {
+    margin-right: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+
+}
+
+.welcome .name-bold {
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+}
+
+.welcome button {
+    
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+div p {
+
+    width: 239px;
+    height: 48px;
+    margin-left: 138px;
+    margin-top: 121px;
+
+
+    
+
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+
+    
+
+    color: #4F4F4F;
+
+}
+
+#section-card {
+    display: flex;
+    justify-content: space-between;
+    
+    height: 551px;
+    
+    inset: 0;
+    margin-left: 132px;
+    margin-right: 94px;
+    margin-top: 7px;
+   
+
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border: #4F4F4F;
+    border-radius: 16px;
+}
+#novo-cad {
+    width: 197px ;
+    height:52px;
+    
+    padding: 14px 20px;
+    gap: 10px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    margin-left: 20px;
+    margin-top: 20px;
+
+    background: #017849;
+    color: #ffffff;
+    border-radius: 30px;
+    border: none;
+}
+
+
+
+.btn-search button {
+    
+    height:48px;
+    margin-top: 20px;
+    margin-right: 24px;
+    
+    padding: 14px 20px;
+    
+    color: #ffffff;
+    background: #00995D;
+    border-radius: 0px 30px 30px 0px;
+    border: none;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+.btn-search  input {
+    width: 250px;
+    height:47px;
+    margin-right: -3px;
+    padding-left: 15px;
+
+    
+    border: 1px solid #BDBDBD;
+    background: #FFFFFF;
+
+
+    box-sizing: border-box;
+    border-radius: 24px 0px 0px 24px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    
+    
+
+    
+
+    color: #828282;
+
+
+    
+    
+}

@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/cadastrar.css">
+    <link rel="stylesheet" href="/senha.css">
     <title>Dados</title>
 </head>
 <body>
 
-    <dialog open=""  id="card-cadastrar">
+    <dialog open=""  id="card-senha">
         <img src="/assets/logo-cadastro.png" alt="">
         <h6>Seja bem-vindo(a)!</h6>
-        <p>Preencha os campos para se cadastrar</p>
+        <p class="escolha-senha">Escolha uma senha</p>
 
-        <label for="">Nome</label>
+        <label for="" id="senha">Senha</label>
         <input type="text" placeholder="Digite seu nome">
 
-        <label for="">E-mail</label>
+        <label for="" id="confirma-senha">Confirma senha</label>
         <input type="email" placeholder="Digite seu e-mail">
+        
+        
+            <p class="obr">*Precisa no minimo 8 digitos</p>
+            <p class="obr" >*Precisa conter um caractere especial */+.</p>
+            <p class="obr" >*Precisa conter uma letra em MAIÚSCULA</p>
+
+
+        
+        
 
         <button>Prosseguir &rarr;</button>
     </dialog>
