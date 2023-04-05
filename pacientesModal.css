@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@300;700&family=Roboto&display=swap');
+
+#modal-new-Paciente {
+    inset: 0;
+    margin: auto;
+    width: 1093px;
+    height: 842px;
+    
+	
+    
+    
+    border: 1px solid #939393;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;  
+    
+}
+
+#modal-new-Paciente::backdrop {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.header-modal {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header-modal h4 {
+    
+    padding-left: 2.93%;
+    padding-top: 4.14%;
+    
+    
+
+    
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    
+
+    color: #00995D;
+}
+
+.header-modal button {
+
+    padding: 4.94% 5% 0px 0px;
+    
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.tabela input{
+    
+    margin-left: 1.5rem;
+    padding: 13px 16px;
+    width: 327px;
+    height: 47.92px;
+
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+}
+
+.names-table {
+    display: flex;
+    justify-content: space-around;
+    
+    
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    
+    align-items: center;
+
+   
+
+    color: #4F4F4F;
+
+
+    
+
+    
+}

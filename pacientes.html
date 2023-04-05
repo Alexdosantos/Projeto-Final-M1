@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/pacientes.css">
+    <link rel="stylesheet" href="/pacientesModal.css">
     <script src="https://kit.fontawesome.com/7b81108c6c.js" crossorigin="anonymous"></script>
     <title>Pacientes</title>
 </head>
@@ -28,30 +29,94 @@
             <p>Meus pacientes</p>  
         </div>   
         
-      <section  id="section-card">
-            <button id="novo-cad">
-                <i class="fa-solid fa-circle-plus" style="color: #ffffff;"></i>
-                Novo Cadastro
-            </button>  
+        <section  id="section-card">
+            <div class="teste-btn">
+             <button id="btn-cad">
+                 <i class="fa-solid fa-circle-plus" style="color: #ffffff;"></i>
+                 Novo Cadastro
+             </button>  
+             
             
-            <div class="btn-search">
-                <input type="text" placeholder="Pesquisar">
-                
-                <button>
-                    <i class="fa-solid fa-magnifying-glass"><span></span></i>  Filtrar
-                </button>
+                 
+                 <div class="btn-search">
+                     <input type="text"  id="input-btn" placeholder="Pesquisar">
+                     <button>
+                         
+                         <i class="fa-solid fa-magnifying-glass"><span></span></i>  Filtrar
+                     </button>
+     
+                 </div>
+                 
+     
+            </div> 
+             
+     
+                 <table >
+                     <thead>
+                       <tr>
+                         <th>Código</th>
+                         <th>Nome</th>
+                         <th>CPF</th>
+                         <th class="acao">Ações</th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                       <tr>
+                         <td>001</td>
+                         <td>João da Silva</td>
+                         <td>123.456.789-00</td>
+                         <td class="btn-pacientes">
+                           <button id="agenda"><i class="fa-solid fa-calendar-minus" style="color: #017849;"></i></button>
+                           <button id="editar" ><i class="fa-solid fa-pen" style="color: #2f80ed;"></i></i></button>
+                           <button id="excluir"><i class="fa-solid fa-trash-can" style="color: #eb5757;"></i></button>
+                         </td>
+                       </tr>
+                       
+                       
+                     </tbody>
+                   </table>
+                   
+     
+         </section>  
+         
+    </main>
 
-            </div>
-            
-            
+    <!-- AQUI COMEÇA A PARTE DOS MODAL -->
 
-      </section>  
+    <dialog open id="modal-new-Paciente">
+          <div class="header-modal" >
+            <h4>Novo pacientes</h4>
+            <button id="close-modal"><i class="fa-sharp fa-solid fa-circle-xmark"   style="color: #09121f;"></i></button>
+          </div>
+
+          <div class="names-table">
+            <label for="">CPF</label>
+            <label for="">Nome</label>
+            <label for="">Data de Dascimento</label>
+
+          </div>
+
+          
+          
+          <div class="tabela">
+            
+            <input type="text" class="CPF" placeholder="Digite">
+            <input type="text" class="Nome" placeholder="Digite">
+            <input type="date" class="Date" placeholder="Digite">
+
+          </div>
+          
+
         
+      </select>
       
 
-   </main>
+  
+  
+    </dialog>
+
     
     
-    
+<script src="/app.js" ></script>  
 </body>
 </html>

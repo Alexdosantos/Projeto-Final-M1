@@ -4,7 +4,6 @@
     padding: 0;
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -100,11 +99,14 @@ div p {
 
 }
 
-#section-card {
-    display: flex;
+#section-card  {
+    
+    
     justify-content: space-between;
     
+    
     height: 551px;
+    grid-auto-rows: 200px;
     
     inset: 0;
     margin-left: 132px;
@@ -118,7 +120,8 @@ div p {
     border: #4F4F4F;
     border-radius: 16px;
 }
-#novo-cad {
+#btn-cad {
+
     width: 197px ;
     height:52px;
     
@@ -140,20 +143,19 @@ div p {
     border: none;
 
     cursor: pointer;
+
 }
 
-#novo-cad:hover {
-    background: #ffffff;
+#btn-cad:hover {
+    background: #FFFFFF;
+    border: 1px solid #017849;
     color: #017849;
     transition: .3s;
-    border: 1px solid #017849;
-
 }
 
 
 
 .btn-search button {
-    
     height:48px;
     margin-top: 20px;
     margin-right: 24px;
@@ -175,12 +177,17 @@ div p {
 }
 
 .btn-search button:hover {
-    background: #03b16c;
-    color: #fbfdfc;
+    background: #05ab69;
+   
+    color: #ffffff;
     transition: .3s;
-  
 
-
+}
+.btn-search {
+    margin-right: 105px;
+}
+.teste-btn {
+    margin-left: 110px;
 }
 
 .btn-search  input {
@@ -208,6 +215,128 @@ div p {
     
     color: #828282;
 
+}
 
+.teste-btn {
+    display: flex;
+    justify-content: space-between;
+}
+.input-btn  {
+    margin-left: 850px;
+    background: #4F4F4F;
+}
+
+table {
+    width: 90%;
+    text-align: center;
+    
+    padding-top: 55px;
+    padding-left: 180px;
+}
+
+
+th {
+    
+    text-align:left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #2F80ED;
+
+}
+
+td {
+    margin-top: 10px;
+    padding: 10px 0px 10px 5px;
+
+    text-align:left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    box-sizing: border-box;
+    border: .3px solid #E0E0E0;
+
+    color: #4F4F4F;
+
+}
+
+
+  
+td:nth-child(1) {
+    
+    width: 10%;
     
 }
+  
+td:nth-child(2) {
+    width: 25%;
+    
+}
+  
+td:nth-child(3) {
+    width: 45%;
+    
+}
+  
+td:nth-child(4) {
+    width: 50%;
+    
+}
+
+
+
+.btn-pacientes {
+  padding: 0px 0px 5px 100px;  
+  
+}
+.acao {
+    padding: 0px 0px 5px 120px; 
+}
+
+#agenda {
+    
+    padding: 4px 8px;
+    gap: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #017849;
+
+
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#editar{
+    padding: 4px 8px;
+    gap: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #2f80ed;
+
+
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+#excluir {
+    padding: 4px 8px;
+    gap: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #eb5757;
+
+
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
