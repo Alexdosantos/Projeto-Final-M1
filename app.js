@@ -1,5 +1,5 @@
 const openModal = document.querySelector('#btn-cad')
-const modal = document.querySelector('#modal-new-Paciente')
+const modal = document.querySelector('#modal-new-Paciente' )
 const closeModal = document.querySelector('#close-modal')
 
 openModal.onclick = function() {

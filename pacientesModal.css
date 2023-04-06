@@ -4,16 +4,19 @@
     inset: 0;
     margin: auto;
     width: 1093px;
-    height: 842px;
+    height: 642px;
+   
     
 	
     
     
     border: 1px solid #939393;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;  
+    border-radius:10px 10px 10px 10px;  
     
 }
+
+
 
 #modal-new-Paciente::backdrop {
     background-color: rgba(0, 0, 0, 0.5)
@@ -39,7 +42,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    display: flex;
+    
     align-items: center;
 
     
@@ -47,9 +50,12 @@
     color: #00995D;
 }
 
-.header-modal button {
+.header-modal button  {
 
-    padding: 4.94% 5% 0px 0px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background: transparent;
     
     border: none;
 
@@ -57,7 +63,32 @@
 
 }
 
-.tabela input{
+.header-modal button i {
+    width: 60px;
+}
+
+.grid-pai {
+    display: flex;
+    padding-top: 25px;
+    
+}
+
+.grid-pai1 {
+    display: flex;
+    padding-top: 50px;
+    
+}
+.grid-pai2 {
+    display: flex;
+    padding-top: 50px;
+    
+}
+
+
+.grid-modal input , select {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     
     margin-left: 1.5rem;
     padding: 13px 16px;
@@ -71,12 +102,13 @@
 
 }
 
-.names-table {
+.grid-modal label{
     display: flex;
-    justify-content: space-around;
+    text-align: center;
+    justify-content: center;
+    padding-right: 150px;
     
     
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -89,8 +121,112 @@
 
     color: #4F4F4F;
 
+}
 
+.cpf {
+    width: 22%;
+}
+.nome {
+    width: 26%;
+}
+.dateNas {
+    width: 51%;
+}
+.email {
+    width: 27%;
+}
+.genero {
+    width: 37%;
+}
+.nacionalidade {
+     width: 42%;
+}
+.naturalidade {
+    width: 38%;
+}
+.profissao {
+    width: 32%;
+}
+.escolaridade {
+    width: 39%;
+}
+.estado-civil {
+    width: 37%;
+}
+.mae {
+    width: 24%;
+}
+.pai {
+    width: 21%;
+}
+
+.modal-end{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.obrigacao p{
+    padding-left: 35px;
     
 
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+
+    color: #616161;
+
+
+}
+
+.save {
+    display: flex;
+    align-items: baseline;
+    padding-top: 45px;
     
 }
+.save button{
+    margin-right: 38px;
+    width: 268px;
+    height: 58px;
+
+    background: #00995D;
+    border-radius: 8px;
+    border: none;
+    color: #FFFFFF;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    
+    
+}
+
+.save button:hover{
+    background: #08a365;
+    transition: .3s;
+
+}
+.save p {
+    
+    padding-right: 15px;
+    
+
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+
+     color: #616161;
+     cursor: pointer;
+}
+
+.save p:hover {
+    font-size:21px ;
+    transition: .3s;
+}
+

@@ -25,7 +25,7 @@
             
            
         </header>
-        <div>
+        <div class="name-paciente">
             <p>Meus pacientes</p>  
         </div>   
         
@@ -86,34 +86,144 @@
     <dialog open id="modal-new-Paciente">
           <div class="header-modal" >
             <h4>Novo pacientes</h4>
-            <button id="close-modal"><i class="fa-sharp fa-solid fa-circle-xmark"   style="color: #09121f;"></i></button>
+            <button id="close-modal"><i class="fa-sharp fa-2xl fa-solid fa-circle-xmark"   style="color: #09121f;"></i></button>
           </div>
 
-          <div class="names-table">
-            <label for="">CPF</label>
-            <label for="">Nome</label>
-            <label for="">Data de Dascimento</label>
-
+          <div class="grid-pai">
+              <div class="grid-modal">
+                <label for="" class="cpf" >CPF</label>
+                <input type="text" class="CPF" placeholder="Digite">
+              </div>
+    
+              <div class="grid-modal">
+                <label for="" class="nome">Nome</label>
+                <input type="text" class="CPF" placeholder="Digite">
+              </div>
+    
+              <div class="grid-modal">
+                <label for="" class="dateNas">Data de  Nascimento</label>
+                <input type="date" class="CPF" placeholder="Digite">
+              </div>
+  
           </div>
-
-          
-          
-          <div class="tabela">
-            
-            <input type="text" class="CPF" placeholder="Digite">
-            <input type="text" class="Nome" placeholder="Digite">
-            <input type="date" class="Date" placeholder="Digite">
-
-          </div>
-          
 
         
-      </select>
-      
+          <div class="grid-pai1">
+                      <div class="grid-modal">
+                        <label for="" class="email" >E-mail</label>
+                        <input type="text"  placeholder="Digite">
+                      </div>
+            
+                      <div class="grid-modal">
+                        <label for="escolha" class="genero">Sexo/Gênero</label>
+                          <select id="escolha" name="escolha" placeholder="Digite">
+                            <option>Escolha uma opção</option>
+                            <option value="opcao1">Masculino</option>
+                            <option value="opcao2">Feminino</option>
+                          </select>
+                            <!--
+                              <label for="" class="genero">Sexo/Gênero</label>
+                              <input type="text"  placeholder="Digite">
 
+                            -->
+                        
+                      </div>
+                      
+                      
+                      <div class="grid-modal">
+                            <label for="nacionalidade" class="nacionalidade">Nacionalidade:</label>
+                            <select id="nacionalidade" name="nacionalidade">
+                                <option>Escolha uma opção</option>
+                                <option value="brasil">Brasil</option>
+                                <option value="argentina">Argentina</option>
+                                <option value="portugal">Portugal</option>
+                                <option value="espanha">Espanha</option>
+                                <option value="estados-unidos">Estados Unidos</option>
+                                <option value="canada">Canadá</option>
+                                <option value="outras">Outra</option>
+                            </select>
+
+                      </div>
+          </div>  
+
+          <div class="grid-pai2">
+            <div class="grid-modal">
+              <label for="" class="naturalidade">Naturalidade</label>
+              <input type="text"  placeholder="Digite">
+            </div>
+  
+            <div class="grid-modal">
+              <label for="" class="profissao">Profissão</label>
+              <input type="text"  placeholder="Digite">
+            </div>
+  
+            <div class="grid-modal">
+              
+                <label for="escolha" class="escolaridade">Escolaridade</label>
+                <select id="escolha" name="escolha" placeholder="Digite">
+                    <option>Escolha uma opção</option>
+                    <option value="Ensino-Fundamental">Ensino Fundamental</option>
+                    <option value="Ensino-medio">Ensino Médio</option>
+                    <option value="Gradução">Gradução</option>
+                    <option value="Mestrado">Mestrado</option>
+                            
+                </select>
+            </div>
+
+          </div>
+
+          <div class="grid-pai2">
+            <div class="grid-modal">
+              
+                <label for="escolha" class="estado-civil">Estado Civil</label>
+                <select id="escolha" name="escolha" placeholder="Digite">
+                    <option>Escolha uma opção</option>
+                    <option value="solteiro">Solteiro</option>
+                    <option value="casado">Casado</option>
+                    <option value="divorsiado">Divorsiado</option>
+                    <option value="viuvo">Viúvo</option>
+                            
+                </select>
+            </div>
+                  <div class="grid-modal">
+                    <label for="" class="mae">Mãe</label>
+                    <input type="text"  placeholder="Digite">
+                  </div>
+        
+                  <div class="grid-modal">
+                    <label for="" class="pai">Pai</label>
+                    <input type="text"  placeholder="Digite">
+                  </div>
+  
+          </div> 
+
+          <div class="modal-end">
+              <div class="obrigacao">
+                <p>*Campos obrigatórios</p>
+              </div>
+
+              <div class="save">
+                <p>Cancelar</p>
+                <button>Salvar alterações</button>
+              </div>
+
+
+
+
+          </div>
+            
+            
+          
+            
+            
+            
+  
   
   
     </dialog>
+
+    
+    
 
     
     
