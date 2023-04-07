@@ -1,15 +1,13 @@
+/*AQUI  É O CSS DO MODAL NOVO PACIENTE*/
+
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@300;700&family=Roboto&display=swap');
 
-#modal-new-Paciente {
+#modal-new-Paciente , #editar-pacientes ,#dados-pacientes {
     inset: 0;
     margin: auto;
     width: 1093px;
     height: 642px;
    
-    
-	
-    
-    
     border: 1px solid #939393;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius:10px 10px 10px 10px;  
@@ -19,6 +17,12 @@
 
 
 #modal-new-Paciente::backdrop {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+#editar-pacientes::backdrop {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+#dados-pacientes::backdrop {
     background-color: rgba(0, 0, 0, 0.5)
 }
 
@@ -33,10 +37,6 @@
     padding-left: 2.93%;
     padding-top: 4.14%;
     
-    
-
-    
-
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -168,7 +168,6 @@
 .obrigacao p{
     padding-left: 35px;
     
-
     font-family: 'Poppins';
     font-style: italic;
     font-weight: 400;
@@ -199,7 +198,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     
     
