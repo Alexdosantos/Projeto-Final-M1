@@ -1,0 +1,123 @@
+/* AQUI E MODAL NOVA SESSÃO*/
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@300;700&family=Roboto&display=swap');
+
+#modal-prontuario{
+    inset: 0;
+    width: 674px;
+    height: 635px;
+    margin: auto;
+    
+    border: 1px solid #939393;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius:10px 10px 10px 10px; 
+    
+}  
+
+#modal-prontuario::backdrop {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+.head-modal {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 32px 0px 32px;
+}
+
+.head-modal div h2  {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    
+
+    color: #00995D;
+}
+
+.dadosGerais {
+    display: flex;
+    padding-left: 29px;
+    padding-top: 25px;
+    gap: 6px;
+}
+.dadosGerais p  {
+    
+    width: 32px;
+    height: 32px;
+    border-radius: 50px 50px 50px 50px;
+    padding: 0px 0px 0px 0px;
+    
+    background-color: #00995D; 
+}
+.dadosGerais h5{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #212121; 
+}
+#modalForm-Prontuario {
+    display: flex;
+    
+}
+
+.textmodalForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-left: 11px;
+   
+    
+}
+
+.textmodalForm label {
+    display: flex;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+
+    color: #4F4F4F;
+
+}
+
+.textmodalForm input {
+    width: 182px;
+    height: 48px;
+    padding-left: 9px;
+    padding-right: 15px;
+    
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    outline:none;
+   
+
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+    
+    border-radius: 8px;
+    color: #828282;
+
+
+}
+.btn-closeModal-Prontuario {
+    border: none;
+    background: transparent;
+}

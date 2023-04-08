@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/prontuario.css">
     <link rel="stylesheet" href="/pacientes.css">
+    <link rel="stylesheet" href="/ProntuarioModal.css">
     <script src="https://kit.fontawesome.com/7b81108c6c.js" crossorigin="anonymous"></script>
     <title>Prontuário</title>
 </head>
@@ -129,8 +130,59 @@
 
     </main>
 
+    <main>
+        <dialog  id="modal-prontuario">
+            <div class="head-modal"> 
+            
+                <div>
+                    <h2>Nova Sessão</h2>
+                </div>
+
+                <div>
+                    <button class="btn-closeModal-Prontuario" id="btn-closeModal-Prontuario">
+                        <img src="/assets/close.svg" alt="">
+                    </button>
+                    
+                </div>
+            
+            </div>
+
+            <div class="dadosGerais">
+                <p></p>
+                <h5>Dados Gerais</h5>
+            </div>
+
+            <form action="" id="modalForm-Prontuario">
+                <div class="textmodalForm">
+                    <label for="data">Data</label>
+                    <input type="date">
+
+                </div>
+                <div class="textmodalForm">
+                    <label for="data">Hora de início*</label>
+                    <input type="time">
+
+                </div>
+                <div class="textmodalForm">
+                    <label for="data">Hora fim*</label>
+                    <input type="time">
+
+                </div>
+            
+            </form>
+        
+        
+        
+        
+        
+        </dialog>
+    </main>
+
+    <!-- AQUI COMEÇA O MODAL DA NOVA SESSÃO-->
+
     <script src="/app.js" ></script>
     <script src="/pacientesModal.js" ></script>  
+    <script src="/prontuarioModal.js" ></script> 
     
 </body>
 </html>
