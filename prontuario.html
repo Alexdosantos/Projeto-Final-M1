@@ -25,56 +25,104 @@
     </header>
 
     <main class="body-prontuario">
-
+                <main class="searchProntuario">
                     <section class="search-prontuario">
-                        <div>
+                        <div class="text-prontuario">
                             <h2>Prontuário</h2>
                         </div>
                         
                         <div>
                             <input type="text" placeholder="Pesquisar">
-                            <button>filtar</button>
+                            
+                            <button class="btn-searchProntuario" id="btn-searchProntuario">
+                                <i class="fa-solid fa-magnifying-glass"><span></span></i>
+                                Filtar
+                            </button>
 
                         </div>
                         
                         
                     </section>
 
+                </main>
 
+            
 
-
-
+            
+            <main class="card-boxProntuario">
                 <section class="identidade-paciente">
                     <div>
                         <h3>Identidade do paciente</h3>
-                        <p>Paciente</p>
-                        <small></small>
                         
-                        
-                        <p>Nascimento</p>
-                        <small></small>
-    
-                        <p>Profissão</p>
-                        <small></small>
-    
-                        <p>Escolaridade</p>
-                        <small></small>
+                        <div class="text-cardIdenteficacao">
+
+                       
+                            <div class="text-identificacao">
+                                <p>
+                                    <img  src="/assets/user.svg" alt="">
+                                    Paciente
+                                </p>
+                                <small class="text-idPaciente">Ana Ester Resende</small>
+
+                            </div>
+                                
+                            <div class="text-identificacao">
+                                <p>
+                                    <img src="/assets/date.svg" alt="">
+                                    Nascimento
+                                </p>
+                                <small >10/09/2000</small>
+
+                            </div>
+                                
+                                
+                            <div class="text-identificacao">
+                                    <p>
+                                        <img  src="/assets/bussines.svg" alt="">
+                                        Profissão
+                                    </p>
+                                    <small >Designer</small>
+
+                            </div>
+            
+                            <div class="text-identificacao">
+                                <p>
+                                    <img src="/assets/Vector.svg" alt="">
+                                    Escolaridade
+                                </p>
+                                <small>Superior incompleto</small>
+                            </div>
+                        </div> 
                     </div>
+                        
+    
+                        
     
                 </section>
 
-                <section>
-                    <div>
-                        <p>Sessão</p>
+                <section class="sessao-fato">
+                    <div >
+
+                        <button class="btn-sessao-pronturario" id="sessao-pronturario">
+                            <img src="/assets/sessão.svg" alt="">
+                            Sessão
+
+                        </button>
+                            
                     </div>
 
                     <div>
-                        <p>Fato relevante</p>
+                        <button class="btn-fatoRelevante">
+                            <img src="/assets/fato relevante.svg" alt="">
+                            Fato relevante
+
+                        </button>
+                           
                     </div>
                 
                 </section>
 
-                
+            </main>    
 
 
 

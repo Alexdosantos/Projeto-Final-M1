@@ -1,13 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,500&family=Roboto&display=swap');
+#card-cadastrar
+
 *{
     margin: 0;
 }
 
 .body-prontuario {
-    margin-top: 5px;
+    margin-top: -45px;
 
 
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     background: #ffffff;
-    box-shadow: 0px 04px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
+
+.search-prontuario{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 10px 0px 0px;
+    justify-content: baseline;
+    
+    
+}
+
+.text-prontuario h2{
+    margin-left: 25px;
+
+}
+.search-prontuario div h2 {
+    width: 382px;
+    height: 48px;
+    margin-left: 137px;
+    margin-top: 55px;
+    
+   
+
+
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+
+    
+
+    color: #4F4F4F;
+
+}
+
+.card-boxProntuario {
+    margin-top: 35px;
+}
+.btn-searchProntuario{
+    height:48px;
+    margin-top: 20px;
+    margin-right: 127px;
+    
+    padding: 14px 20px;
+    
+    color: #ffffff;
+    background: #00995D;
+    border-radius: 0px 30px 30px 0px;
+    border: none;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    cursor: pointer;
+
+ 
+
+}
+.btn-searchProntuario:hover {
+    background: #05ab69;
+   
+    color: #ffffff;
+    transition: .3s;
+
+}
+
+.search-prontuario div input {
+    width: 250px;
+    height:47px;
+    margin-right: -3px;
+    padding-left: 29px;
+    margin-top: 55px;
+
+    
+    border: 1px solid #BDBDBD;
+    background: #ffffff;
+    outline-color: #017849;
+
+
+    box-sizing: border-box;
+    border-radius: 24px 0px 0px 24px;
+    border: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    
+    
+    color: #828282;
+
+}
+/*AQUI É O CARD DE  IDENTIDADE DO PACIENTE */
+.text-cardIdenteficacao {
+    padding-top: 15px;
+}
+.card-boxProntuario {
+    display: flex;
+    margin-left: 138px;
+}
+
+
+
+
+.identidade-paciente {
+
+    width: 640px;
+    height: 450px;
+    
+
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    border-radius: 8px;
+
+}
+
+.sessao-fato {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+ 
+
+
+    width: 100%;
+    height: 80px;
+    margin-left: 10px;
+    margin-right: 11em;
+
+  
+    color: #616161;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.btn-sessao-pronturario {
+    font-size: 18px;
+    padding-left: 150px;
+    padding-top: 19px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 20px;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn-fatoRelevante {
+    font-size: 18px;
+    padding-right: 59px;
+    padding-top: 19px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+
+.sessao-fato  img {
+    height: 30px;
+}
+
+.identidade-paciente h3 {
+    width: 234px;
+    height: 22px;
+    padding-left: 24px;
+    padding-top: 24px;
+
+    /* montserrat 18 */
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    /* Tons de cinza/Cinza 900 */
+
+    color: #212121;
+}
+
+.text-cardIdenteficacao {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.text-identificacao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+}
+.text-identificacao p {
+
+    
+    padding-top: 1px;
+    padding-left: 34px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 170%;
+    
+    color: #00995D;
+}
+.text-identificacao img {
+    width: 15.67;
+    height: 18px;
+    padding-right: 5px;
+
+}
+
+.text-identificacao small {
+
+    padding-left: 55px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    
+
+    color: #616161;
+
+}
+
+

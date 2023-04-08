@@ -186,8 +186,10 @@ header img {
 .btn-search {
     margin-right: 105px;
 }
-.teste-btn {
+.btn-cadastroPaciente {
     margin-left: 110px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .btn-search  input {
@@ -217,10 +219,7 @@ header img {
 
 }
 
-.teste-btn {
-    display: flex;
-    justify-content: space-between;
-}
+
 .input-btn  {
     margin-left: 850px;
     background: #4F4F4F;
