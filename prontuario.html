@@ -102,6 +102,8 @@
                 </section>
 
                 <section class="sessao-fato">
+                    
+                    
                     <div >
 
                         <button class="btn-sessao-pronturario" id="sessao-pronturario">
@@ -110,15 +112,28 @@
 
                         </button>
                             
+                        
                     </div>
 
                     <div>
-                        <button class="btn-fatoRelevante">
+                        <button class="btn-fatoRelevante" id="btn-fatoRelevante">
                             <img src="/assets/fato relevante.svg" alt="">
                             Fato relevante
 
                         </button>
                            
+                    </div>
+
+
+                    <div class="cardSessao">
+                        
+                        <img src="" alt="">
+                        <h4>Sessão 01</h4>
+                        <p>01 de setembro de 2022</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+                            Repellendus totam amet provident velit voluptatibus cum 
+                            delectus quisquam, esse ullam quis placeat,<br> officiis excepturi?
+                            Assumenda vero unde dolore aliquam eos quisquam?</p>
                     </div>
                 
                 </section>
@@ -129,7 +144,9 @@
 
 
     </main>
-
+                            <!-- AQUI COMEÇA O MODAL DA SESSÃO-->
+    
+    
     <main>
         <dialog  id="modal-prontuario">
             <div class="head-modal"> 
@@ -147,25 +164,63 @@
             
             </div>
 
-            <div class="dadosGerais">
-                <p></p>
-                <h5>Dados Gerais</h5>
-            </div>
+            
 
-            <form action="" id="modalForm-Prontuario">
-                <div class="textmodalForm">
-                    <label for="data">Data</label>
-                    <input type="date">
+            <form action="">
+                <div class="dadosGerais">
+                    <p>1</p>
+                    <h5>Dados Gerais</h5>
+                </div>
+                
+                <div id="modalForm-Prontuario">
+                    <div class="textmodalForm">
+                        <label for="data">Data*</label>
+                        <input type="date">
+    
+                    </div>
+                    <div class="textmodalForm">
+                        <label for="data">Hora de início*</label>
+                        <input type="time">
+    
+                    </div>
+                    <div class="textmodalForm">
+                        <label for="data">Hora fim*</label>
+                        <input type="time">
+    
+                    </div>
+                    
+                </div>
+                
+                <div id='modalForm-Prontuario1'>
+                    <div class="dadosGerais1">
+                        <p>2</p>
+                        <h5>Sessão</h5>
+                    </div>
+    
+                    <div class="textmodalForm">
+                        <label for="">Titulo*</label>
+                        <input type="text " id="titulo-input" placeholder="Digite">
+                    </div>
+    
+                    <div class="textmodalForm">
+                        <label for="Resumo da sessão*">Resumo da sessão*</label>
+                        <textarea name="" id="tituloTextModal" cols="30" rows="10"></textarea>
+                    </div>
 
                 </div>
-                <div class="textmodalForm">
-                    <label for="data">Hora de início*</label>
-                    <input type="time">
+                
 
-                </div>
-                <div class="textmodalForm">
-                    <label for="data">Hora fim*</label>
-                    <input type="time">
+                <div class="end-modalProntuario">
+                    <div>
+                        <p>*Campos obrigatórios</p>
+                    </div>
+
+                    <div class="btn-endModalProntuario">
+                        <button class="btn-cancelarSessao" id="btn-cancelarSessao">Cancelar</button>
+                        <button class="btn-criarNovasessao" id="btn-criarNovasessao" >Criar</button>
+
+                    </div>
+
 
                 </div>
             
@@ -176,9 +231,84 @@
         
         
         </dialog>
+                            
+        
+        
+                        <!-- AQUI COMEÇA O MODAL NOVO FATO RELEVANTE-->
+
+        <dialog  id="modalNovoRelevante">
+            <div class="head-modal"> 
+            
+                <div>
+                    <h2>Novo Fato Relevante</h2>
+                </div>
+
+                <div>
+                    <button class="btn-closeModalFato" id="btn-closeModalFato">
+                        <img src="/assets/close.svg" alt="">
+                    </button>
+                    
+                </div>
+            
+            </div>
+
+            
+
+            <form action="">
+               
+                
+                <div id="modalForm-Prontuario">
+                    <div class="textmodalForm1">
+                        <label for="data">Data*</label>
+                        <input type="date">
+    
+                    </div>
+                    <div class="textmodalForm1">
+                        <label for="data">Titulo*</label>
+                        <input class="text-inputFato" type="text">
+    
+                    </div>
+                    
+                    
+                </div>
+                
+                <div id='modalForm-Prontuario1'>
+                    
+    
+                    <div class="textmodalForm">
+                        <label for="Resumo da sessão*">Descrição*</label>
+                        <textarea name="" id="tituloTextModal" cols="30" rows="10"></textarea>
+                    </div>
+
+                </div>
+                
+
+                <div class="end-modalFatoRelevante">
+                    <div>
+                        <p>*Campos obrigatórios</p>
+                    </div>
+
+                    <div class="btn-endModalProntuario">
+                        <button class="btn-cancelarFato" id="btn-cancelarFato">Cancelar</button>
+                        <button class="btn-criarFatoRelevante" id="btn-criarFatoRelevante" >Criar</button>
+                        
+                    </div>
+
+
+                </div>
+            
+            </form>
+        
+        
+        
+        
+        
+        </dialog>
+
+
     </main>
 
-    <!-- AQUI COMEÇA O MODAL DA NOVA SESSÃO-->
+    
 
     <script src="/app.js" ></script>
     <script src="/pacientesModal.js" ></script>  
@@ -186,3 +316,5 @@
     
 </body>
 </html>
+
+refaça esse código da maneira mais adequanda

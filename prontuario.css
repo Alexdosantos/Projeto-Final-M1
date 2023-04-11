@@ -146,6 +146,7 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
+    
  
 
 
@@ -204,18 +205,13 @@
     padding-left: 24px;
     padding-top: 24px;
 
-    /* montserrat 18 */
 
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height */
-
-
-    /* Tons de cinza/Cinza 900 */
-
+   
     color: #212121;
 }
 
@@ -266,5 +262,25 @@
     color: #616161;
 
 }
+
+.cardSessao {
+
+    
+    box-sizing: border-box;
+
+    
+    width: 924px;
+    height: 210px;
+    left: 0px;
+    top: 24px;
+
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 8px 8px 0px;
+
+}
+
 
 

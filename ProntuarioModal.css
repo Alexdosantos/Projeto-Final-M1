@@ -37,7 +37,7 @@
     color: #00995D;
 }
 
-.dadosGerais {
+.dadosGerais  {
     display: flex;
     padding-left: 29px;
     padding-top: 25px;
@@ -65,6 +65,8 @@
     
     color: #212121; 
 }
+
+
 #modalForm-Prontuario {
     display: flex;
     
@@ -120,4 +122,349 @@
 .btn-closeModal-Prontuario {
     border: none;
     background: transparent;
+    cursor: pointer;
+}
+
+.dadosGerais1 {
+    display: flex;
+    padding-left: 29px;
+    padding-top: 25px;
+    gap: 6px;
+
+}
+
+.dadosGerais1 p{
+    width: 32px;
+    height: 32px;
+    border-radius: 50px 50px 50px 50px;
+    padding: 0px 0px 0px 0px;
+    
+    background-color: #00995D;
+
+}
+
+.dadosGerais1 h5 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #212121; 
+
+
+}
+
+.titulo-novaSessão {
+    width: 347.04px;
+    height: 21.92px;
+
+    /* montserrat 14 */
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    /* Gray 2 */
+
+    color: #4F4F4F;
+
+}
+
+.titulo-novaSessão {
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloTextModal {
+    box-sizing: border-box;
+
+    width: 578px;
+    height: 153px;
+
+    /* Branco */
+
+    background: #FFFFFF;
+    /* Gray 4 */
+
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+        
+}
+
+#modalForm-Prontuario1 #titulo-input {
+    box-sizing: border-box;
+
+    width: 645px;
+    height: 53px;
+
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#modalForm-Prontuario1 #tituloTextModal{
+
+    box-sizing: border-box;
+
+    width: 645px;
+    height: 153px;
+
+    padding: 10px 0px 10px 15px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+   
+    color: #9E9E9E;
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+    outline: none;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.end-modalProntuario {
+    display: flex;
+    justify-content: space-between;
+}
+
+.end-modalProntuario p {
+    width: 161px;
+    height: 20px;
+    padding: 29px 0px 0px 25px;
+
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    
+
+    letter-spacing: 0.2px;
+
+    color: #616161;
+
+}
+
+.btn-endModalProntuario {
+    padding: 15px 19px 0px 0px;
+
+}
+
+.btn-criarNovasessao {
+    width: 147px;
+    height: 48px;
+
+    background: #00995D;
+    color: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    cursor: pointer;
+    
+}
+
+.btn-criarNovasessao:hover {
+    background-color: #20a06d;
+    transition: .3s;
+    
+}
+
+.btn-cancelarSessao {
+    background: transparent;
+    border: none;
+
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #616161;
+    cursor: pointer;
+}
+
+/*AQUI É O MODAL fATO RELEVANTE*/
+
+#modalNovoRelevante{
+    inset: 0;
+    width: 674px;
+    height: 435px;
+    margin: auto;
+    
+    border: 1px solid #939393;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius:10px 10px 10px 10px; 
+    
+
+}
+
+
+
+#modalNovoRelevante::backdrop {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.btn-closeModalFato {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.textmodalForm1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-left: 11px;
+   
+    
+}
+
+.textmodalForm1 label {
+    display: flex;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+
+    color: #4F4F4F;
+
+}
+
+.textmodalForm1 input {
+    width: 182px;
+    height: 48px;
+    padding-left: 9px;
+    padding-right: 15px;
+    
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    outline:none;
+   
+
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+    
+    border-radius: 8px;
+    color: #828282;
+}
+
+.textmodalForm1 .text-inputFato {
+    box-sizing: border-box;
+
+    width: 425px;
+    height: 48px;
+
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+
+    
+
+    
+}
+
+.end-modalFatoRelevante{
+    display: flex;
+    justify-content: space-between;
+}
+
+.end-modalFatoRelevante p {
+    width: 161px;
+    height: 20px;
+    padding: 29px 0px 0px 25px;
+
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    
+
+    letter-spacing: 0.2px;
+
+    color: #616161;
+
+}
+
+.btn-cancelarFato {
+    background: transparent;
+    border: none;
+
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #616161;
+    cursor: pointer;  
+}
+.btn-cancelarFato:hover {
+    font-size: 17px;
+    transition: .3s;
+}
+
+.btn-criarFatoRelevante{
+    width: 147px;
+    height: 48px;
+
+    background: #00995D;
+    color: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    cursor: pointer;
+    
+
+}
+
+.btn-criarFatoRelevante:hover {
+    background-color: #20a06d;
+    transition: .3s;
+    
 }
