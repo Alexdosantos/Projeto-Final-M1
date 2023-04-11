@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@300;400;700&family=Roboto&display=swap');
 #card-cadastrar
 
 *{
@@ -118,6 +118,7 @@
 }
 .card-boxProntuario {
     display: flex;
+    
     margin-left: 138px;
 }
 
@@ -265,22 +266,149 @@
 
 .cardSessao {
 
+    margin-left: 35.5rem;
+    margin-right: 11rem;
+    margin-top: -13rem;
+    padding-top: 0px 0px 0px 0px;
     
     box-sizing: border-box;
 
-    
-    width: 924px;
-    height: 210px;
-    left: 0px;
-    top: 24px;
 
-    background: #FFFFFF;
+    background: #ffffff;
     border: 1px solid #E0E0E0;
     
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 8px 8px 0px;
+    border-radius: 8px 8px 8px 8px;
+
+}
+.cardSessao img {
+    width: 48px;
+    height: 48px;
+    margin-left: 24px;
+    margin-top: -35px;
+
+    padding: 10px 10px 10px 10px ;
+
+    border-radius: 50px 50px 50px 50px;
+
+    background: #00995D;
+}
+
+.cardSessao h4 {
+    
+    padding: 14px 0px 0px 24px;
+    
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  
+
+
+    color: #000000;
+}
+.date-sessao {
+    
+    
+    padding: 8px 0px 0px 24px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+
+    color: #616161;
+}
+.textInfo-sessao {
+   
+    padding: 10px 0px 0px 24px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    
+    color: #424242;
+}
+
+.cardfatoRelevante {
+    margin-left: 35.5rem;
+    margin-right: 11rem;
+    margin-top: 2rem;
+    padding-top: 0px 0px 0px 0px;
+    
+    box-sizing: border-box;
+
+
+    background: #ffffff;
+    border: 1px solid #E0E0E0;
+    
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 8px 8px 8px;
+
+}
+.retanguloAzul {
+    width: 48px;
+    height: 55px;
+    margin-left: 603px;
+    margin-top: 0px;
+   
 
 }
 
+.img-fatorelevante{
+    width: 48px;
+    height: 48px;
+    margin-left: 24px;
+    margin-top: -35px;
+
+    padding: 10px 10px 10px 10px ;
+
+    border-radius: 50px 50px 50px 50px;
+
+    background: #2F80ED;
+}
+.cardfatoRelevante h4 {
+    padding: 14px 0px 0px 24px;
+    
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  
 
 
+    color: #000000;
+
+}
+
+.dateFatorelevante {
+    padding: 8px 0px 0px 24px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+
+    color: #616161;
+}
+.textInfo-FatoRelefante {
+    padding: 10px 0px 0px 24px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    
+    color: #424242;
+}
