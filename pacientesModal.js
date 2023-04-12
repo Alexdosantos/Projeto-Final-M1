@@ -65,6 +65,7 @@ openDadosPaciente.onclick = function() {
 
 function fecharModalDados () {
     modalDadosPaciente.close()
+    console.log(fecharModalDados)
 }
 
 closeDadosPaciente.onclick = fecharModalDados

@@ -9,9 +9,9 @@
     <script src="https://kit.fontawesome.com/7b81108c6c.js" crossorigin="anonymous"></script>
     <title>Pacientes</title>
 </head>
-<body>
+<body >
 
-   <main>
+   <main >
 
         <header>
             <img src="/assets/logo meus pacientes.png" alt=""> 
@@ -25,6 +25,7 @@
             
            
         </header>
+       
         <div class="name-paciente">
             <p>Meus pacientes</p>  
         </div>   
@@ -51,7 +52,7 @@
             </div> 
              
      
-                 <table >
+                 <table id="content">
                      <thead>
                        <tr>
                          <th>Código</th>
@@ -83,7 +84,7 @@
 
     <!-- AQUI COMEÇA A PARTE DO MODAL NOVO PACIENTE -->
 
-    <dialog class="modal-new-Paciente" id="modal-new-Paciente">
+    <dialog   class="modal-new-Paciente" id="modal-new-Paciente">
           <div class="header-modal" >
             <h4>Novo pacientes</h4>
             <button class="close-modal" id="close-modal"><i class="fa-sharp fa-2xl fa-solid fa-circle-xmark"   style="color: #09121f;"></i></button>
@@ -92,17 +93,17 @@
           <div class="grid-pai">
               <div class="grid-modal">
                 <label for="" class="cpf" >CPF</label>
-                <input type="text" class="CPF" placeholder="Digite">
+                <input type="text" id="cpf" class="CPF" placeholder="Digite">
               </div>
     
               <div class="grid-modal">
                 <label for="" class="nome">Nome</label>
-                <input type="text" class="CPF" placeholder="Digite">
+                <input type="text" id="nome" class="CPF" placeholder="Digite">
               </div>
     
               <div class="grid-modal">
                 <label for="" class="dateNas">Data de  Nascimento</label>
-                <input type="date" class="CPF" placeholder="Digite">
+                <input type="date" id="dataNascimento" class="CPF" placeholder="Digite">
               </div>
   
           </div>
@@ -111,15 +112,15 @@
           <div class="grid-pai1">
                       <div class="grid-modal">
                         <label for="" class="email" >E-mail</label>
-                        <input type="text"  placeholder="Digite">
+                        <input type="text" id="email" placeholder="Digite">
                       </div>
             
                       <div class="grid-modal">
                         <label for="escolha" class="genero">Sexo/Gênero</label>
-                          <select id="escolha" name="escolha" placeholder="Digite">
+                          <select id="genero" name="escolha" placeholder="Digite">
                             <option>Escolha uma opção</option>
-                            <option value="opcao1">Masculino</option>
-                            <option value="opcao2">Feminino</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
                           </select>
                             <!--
                               <label for="" class="genero">Sexo/Gênero</label>
@@ -148,19 +149,19 @@
 
           <div class="grid-pai2">
             <div class="grid-modal">
-              <label for="" class="naturalidade">Naturalidade</label>
-              <input type="text"  placeholder="Digite">
+              <label for=""  class="naturalidade">Naturalidade</label>
+              <input type="text" id="naturalidade" placeholder="Digite">
             </div>
   
             <div class="grid-modal">
               <label for="" class="profissao">Profissão</label>
-              <input type="text"  placeholder="Digite">
+              <input type="text" id="Profissão" placeholder="Digite">
             </div>
   
             <div class="grid-modal">
               
                 <label for="escolha" class="escolaridade">Escolaridade</label>
-                <select id="escolha" name="escolha" placeholder="Digite">
+                <select id="ensino" name="escolha" placeholder="Digite">
                     <option>Escolha uma opção</option>
                     <option value="Ensino-Fundamental">Ensino Fundamental</option>
                     <option value="Ensino-medio">Ensino Médio</option>
@@ -176,7 +177,7 @@
             <div class="grid-modal">
               
                 <label for="escolha" class="estado-civil">Estado Civil</label>
-                <select id="escolha" name="escolha" placeholder="Digite">
+                <select id="estadoCivil" name="escolha" placeholder="Digite">
                     <option>Escolha uma opção</option>
                     <option value="solteiro">Solteiro</option>
                     <option value="casado">Casado</option>
@@ -187,12 +188,12 @@
             </div>
                   <div class="grid-modal">
                     <label for="" class="mae">Mãe</label>
-                    <input type="text"  placeholder="Digite">
+                    <input type="text" id="mae" placeholder="Digite">
                   </div>
         
                   <div class="grid-modal">
                     <label for="" class="pai">Pai</label>
-                    <input type="text"  placeholder="Digite">
+                    <input type="text" id="pai"  placeholder="Digite">
                   </div>
   
           </div> 
@@ -505,7 +506,7 @@
 
     
     
-        <script src="/app.js" ></script>
-        <script src="/pacientesModal.js" ></script>  
+        <script src="/app.js"></script>
+        <script src="/pacientesModal.js"></script>  
 </body>
 </html>

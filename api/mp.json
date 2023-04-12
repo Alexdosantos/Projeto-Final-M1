@@ -1,0 +1,69 @@
+{
+  "Cadastro-Pacientes": [
+    {
+      "cpf": "333.333.222.11",
+      "nome": "Alan dos santos",
+      "Data-nascimente": "10/10/10",
+      "email": "alex@gmail.com",
+      "sexo": "Masculino",
+      "nascionalidade": "Brasil",
+      "naturalidade": "São Paulo",
+      "profissao": "programador",
+      "escolaridade": "Mestrado",
+      "estado civl": "solteiro",
+      "mae": "Maria Fraciente",
+      "pai": "Dijerson Marques",
+      "id": 1
+    },
+    {
+      "cpf": "333.333.222.11",
+      "nome": "Alex dos santos",
+      "Data-nascimente": "10/10/10",
+      "email": "alex@gmail.com",
+      "sexo": "Masculino",
+      "nascionalidade": "Brasil",
+      "naturalidade": "São Paulo",
+      "profissao": "programador",
+      "escolaridade": "Mestrado",
+      "estado civl": "solteiro",
+      "mae": "Maria Fraciente",
+      "pai": "Dijerson Marques",
+      "id": 2
+    },
+    {
+      "cpf": "333.333.222.11",
+      "nome": "Dijerson",
+      "Data-nascimente": "10/10/10",
+      "email": "alex@gmail.com",
+      "sexo": "Masculino",
+      "nascionalidade": "Brasil",
+      "naturalidade": "São Paulo",
+      "profissao": "programador",
+      "escolaridade": "Mestrado",
+      "estado civl": "solteiro",
+      "mae": "Maria Fraciente",
+      "pai": "Dijerson Marques",
+      "id": 3
+    },
+    {
+      "cpf": "333.777.898.80",
+      "nome": "Wallace Samule",
+      "dataNascimento": "2011-11-13",
+      "email": "wallace@gmail.com",
+      "genero": "Masculino",
+      "nacionalidade": "brasil",
+      "naturalidade": "São Paulo",
+      "Profissão": "Programador",
+      "ensino": "Mestrado",
+      "estadoCivil": "solteiro",
+      "mae": "Cinete",
+      "pai": "Dijerson",
+      "id": 4
+    }
+    
+    
+    
+    
+    
+  ]
+}
