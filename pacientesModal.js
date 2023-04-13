@@ -5,6 +5,12 @@ const modal = document.querySelector('.modal-new-Paciente')
 const closeModal = document.querySelector('.close-modal')
 const cancelarModalPaciente = document.querySelector('#cancelar-newPaciente')
 
+
+
+function abriModal () {
+    modal.showModal()
+}
+
 openModal.onclick = function() {
     modal.showModal()
     

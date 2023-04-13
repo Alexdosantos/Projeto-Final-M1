@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', getPosts)
 
 
 const updatePost = async (updatedPost, id) => {
-  await fetch(`http://localhost:3000/Cadastro-Usuarios/${id}`, {
+  await fetch(`http://localhost:3000/cadastro-pacientes/${id}`, {
     method: 'PUT',
     headers: {
       'Accept': 'application/json, text/plain, /',
@@ -51,8 +51,12 @@ const updatePost = async (updatedPost, id) => {
     },
     body: JSON.stringify(updatedPost)
   });
-  currentId = null
+    IdAtual = null
 }
+
+//document.querySelector('#save-alteracao').addEventListener('click', updatePost)
+//console.log(updatePost)
+
 
 const cadastro = async (cad) =>{
   await fetch ("http://localhost:3000/cadastro-pacientes" , {
@@ -75,7 +79,7 @@ const saveCadastro = async () =>  {
    const genero= document.querySelector('#genero').value
    const nacionalidade = document.querySelector('#nacionalidade').value
    const naturalidade = document.querySelector('#naturalidade').value
-   const Profissão = document.querySelector('#Profissão').value
+   const profissao = document.querySelector('#profissao').value
    const ensino = document.querySelector('#ensino').value
    const estadoCivil = document.querySelector('#estadoCivil').value
    const mae= document.querySelector('#mae').value
@@ -89,7 +93,7 @@ const saveCadastro = async () =>  {
       genero,
       nacionalidade,
       naturalidade,
-      Profissão,
+      profissao,
       ensino,
       estadoCivil,
       mae,
@@ -100,7 +104,8 @@ const saveCadastro = async () =>  {
   await cadastro(post)
 
 }
-document.querySelector('#criar-newPaciente').addEventListener('click', saveCadastro)
+
+document.querySelector('#criar-newPaciente').addEventListener('click', saveCadastro )
 
 
 //AQUI É A PARTE DE DELETAR
@@ -116,33 +121,72 @@ const deletarCadastro = async (id) => {
 }
 document.querySelector('#excluir').addEventListener('click', deletarCadastro)
 
+                      //AQUI É A PARTE DE EDITAR
+
+
 
 const editarCadastro = async (id) => {
  editarId = id
  const apiResponse = await  fetch (`http://localhost:3000/cadastro-pacientes/${id}`)
  const posts = await apiResponse.json()
 
-    document.querySelector('#cpf').value = posts.cpf
-    document.querySelector('#nome').value = posts.nome
-    document.querySelector('#dataNascimento').value = posts.dataNascimento
-    document.querySelector('#email').value = posts.email
-    document.querySelector('#genero').value = posts.genero
-    document.querySelector('#nacionalidade').value = posts.nacionalidade
-    document.querySelector('#naturalidade').value = posts.naturalidade
-    document.querySelector('#Profissão').value = posts.Profissão
-    document.querySelector('#ensino').value = posts.ensino
-    document.querySelector('#estadoCivil').value = posts.estadoCivil
-    document.querySelector('#mae').value = posts.mae
-    document.querySelector('#pai').value = posts.pai
+    document.querySelector('#edit-cpf').value = posts.cpf
+    document.querySelector('#edit-nome').value = posts.nome
+    document.querySelector('#edit-dataNascimento').value = posts.dataNascimento
+    document.querySelector('#edit-email').value = posts.email
+    document.querySelector('#edit-genero').value = posts.genero
+    document.querySelector('#edit-nacionalidade').value = posts.nacionalidade
+    document.querySelector('#edit-naturalidade').value = posts.naturalidade
+    document.querySelector('#edit-profissao').value = posts.profissao
+    document.querySelector('#edite-escolaridade').value = posts.ensino
+    document.querySelector('#edit-estadoCivil').value = posts.estadoCivil
+    document.querySelector('#edit-mae').value = posts.mae
+    document.querySelector('#edit-pai').value = posts.pai
 
     modalEditPaciente.showModal()
    
    
     
 }
+document.querySelector('#editar').addEventListener('click', editarCadastro)
 
-//document.querySelector('#editar').addEventListener('click', editarCadastro)
 
+//AQUI É A PARTE QUE PEGO TODA A ALTERAÇÃO DA EDIÇÃO ACIMA E COLOCO OS NOVOS VALORES DENTRO DE saveAlterecao.
 
-  
+const saveAlteracao = async () => {
+  const cpf = document.querySelector('#edit-cpf').value
+  const nome = document.querySelector('#edit-nome').value
+  const dataNascimento = document.querySelector('#edit-dataNascimento').value
+  const email = document.querySelector('#edit-email').value
+  const genero = document.querySelector('#edit-genero').value
+  const nacionalidade = document.querySelector('#edit-nacionalidade').value
+  const naturalidade = document.querySelector('#edit-naturalidade').value
+  const profissao = document.querySelector('#edit-profissao').value
+  const ensino = document.querySelector('#edite-escolaridade').value
+  const estadoCivil = document.querySelector('#edit-estadoCivil').value
+  const mae = document.querySelector('#edit-mae').value
+  const pai = document.querySelector('#edit-pai').value
+
+  const updatedPost = {
+    cpf,
+    nome,
+    dataNascimento,
+    email,
+    genero,
+    nacionalidade,
+    naturalidade,
+    profissao,
+    ensino,
+    estadoCivil,
+    mae,
+    pai,
+  }
+
+  await updatePost(updatedPost, editarId)
+  modalEditPaciente.close()
+  getPosts()
+}
+
+document.querySelector('#save-alteracao').addEventListener('click', saveAlteracao)
+ 
 
