@@ -14,6 +14,66 @@
       "mae": "sem ",
       "pai": "Alex",
       "id": 1
+    },
+    {
+      "cpf": "2156456454",
+      "nome": "Alex",
+      "dataNascimento": "1989-05-10",
+      "email": "alexdosantoss@yahoo.com",
+      "genero": "Masculino",
+      "nacionalidade": "brasil",
+      "naturalidade": "São Paulo",
+      "Profissão": "Programador",
+      "ensino": "Mestrado",
+      "estadoCivil": "solteiro",
+      "mae": "Maria",
+      "pai": "Gerson",
+      "id": 2
+    },
+    {
+      "cpf": "2156456454",
+      "nome": "Alex1",
+      "dataNascimento": "1989-05-10",
+      "email": "alexdosantoss@yahoo.com",
+      "genero": "Masculino",
+      "nacionalidade": "brasil",
+      "naturalidade": "São Paulo",
+      "Profissão": "Programador",
+      "ensino": "Mestrado",
+      "estadoCivil": "solteiro",
+      "mae": "Maria",
+      "pai": "Gerson",
+      "id": 8
+    },
+    {
+      "cpf": "391.078.",
+      "nome": "alex22",
+      "dataNascimento": "2555-02-11",
+      "email": "wallace@gmail.com",
+      "genero": "Masculino",
+      "nacionalidade": "brasil",
+      "naturalidade": "são paulo",
+      "Profissão": "boss",
+      "ensino": "Mestrado",
+      "estadoCivil": "solteiro",
+      "mae": "sem ",
+      "pai": "Alex",
+      "id": 9
+    },
+    {
+      "cpf": "2156456454",
+      "nome": "Maria",
+      "dataNascimento": "2010-10-10",
+      "email": "maria@gmail.com",
+      "genero": "Feminino",
+      "nacionalidade": "brasil",
+      "naturalidade": "sampa",
+      "Profissão": "boss",
+      "ensino": "Ensino-medio",
+      "estadoCivil": "solteiro",
+      "mae": "maria",
+      "pai": "josé",
+      "id": 10
     }
   ]
 }
