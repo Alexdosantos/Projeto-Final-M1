@@ -8,11 +8,12 @@ const getPosts = async () => {
   posts.forEach(post => {
     conteudo += `
       <tr>
-        <td>${post.id}</td>
-        <td>${post.nome}</td>
-        <td>${post.cpf}</td>
+       
+        <td onclick ="dadosPaciente(${post.id})">${post.id}</td>
+        <td onclick ="dadosPaciente(${post.id})">${post.nome}</td>
+        <td onclick ="dadosPaciente(${post.id})">${post.cpf}</td>
         <td class="btn-pacientes">
-          <button  class="agenda" id="agenda"><i class="fa-solid fa-calendar-minus" style="color: #017849;"></i></button>
+          <button onclick ="abrirProntuario()" class="agenda" id="agenda"><i class="fa-solid fa-calendar-minus" style="color: #017849;"></i></button>
           <button onclick="editarCadastro(${post.id})"   class="editar" id="editar" ><i class="fa-solid fa-pen" style="color: #2f80ed;"></i></i></button>
           <button onclick="deletarCadastro(${post.id})"  class="excluir" id="excluir"><i class="fa-solid fa-trash-can" style="color: #eb5757;"></i></button>
         </td>
@@ -126,7 +127,7 @@ document.querySelector('#excluir').addEventListener('click', deletarCadastro)
 
 
 const editarCadastro = async (id) => {
- editarId = id
+ editarId = id 
  const apiResponse = await  fetch (`http://localhost:3000/cadastro-pacientes/${id}`)
  const posts = await apiResponse.json()
 
@@ -188,5 +189,35 @@ const saveAlteracao = async () => {
 }
 
 document.querySelector('#save-alteracao').addEventListener('click', saveAlteracao)
+
+function abrirProntuario ()  {
+  window.location.href = "prontuario.html"
+}
+ console.log(abrirProntuario)
+
+
+ const dadosPaciente = async (id) => {
+  editarId = id 
+  const apiResponse = await  fetch (`http://localhost:3000/cadastro-pacientes/${id}`)
+  const posts = await apiResponse.json()
  
+     document.querySelector('#dados-cpf').value = posts.cpf
+     document.querySelector('#dados-nome').value = posts.nome
+     document.querySelector('#dados-dataNascimento').value = posts.dataNascimento
+     document.querySelector('#dados-email').value = posts.email
+     document.querySelector('#dados-genero').value = posts.genero
+     document.querySelector('#dados-nacionalidade').value = posts.nacionalidade
+     document.querySelector('#dados-naturalidade').value = posts.naturalidade
+     document.querySelector('#dados-profissao').value = posts.profissao
+     document.querySelector('#dados-escolaridade').value = posts.ensino
+     document.querySelector('#dados-estadoCivil').value = posts.estadoCivil
+     document.querySelector('#dados-mae').value = posts.mae
+     document.querySelector('#dados-pai').value = posts.pai
+ 
+     modalDadosPaciente.showModal()
+    
+    
+     
+ }
+ console.log(dadosPaciente)
 

@@ -56,7 +56,7 @@ cancelaEditPaciente.onclick = fecharModalEdit;
 const openDadosPaciente = document.querySelector('#agenda')
 const modalDadosPaciente = document.querySelector('#dados-pacientes')
 const closeDadosPaciente = document.querySelector('#close-modal-dadosPaciente')
-const cancelarDadosPaciente = document.querySelector('#cancelarDadosPacientes')
+//const cancelarDadosPaciente = document.querySelector('#cancelarDadosPacientes')
 
 
 
@@ -69,13 +69,15 @@ openDadosPaciente.onclick = function() {
     
 }
 
-function fecharModalDados () {
+closeDadosPaciente.onclick = function() {
+
     modalDadosPaciente.close()
-    console.log(fecharModalDados)
+    console.log(openDadosPaciente )
+    
+    
 }
 
-closeDadosPaciente.onclick = fecharModalDados
-cancelarDadosPaciente.onclick = fecharModalDados
+
 
 
 
