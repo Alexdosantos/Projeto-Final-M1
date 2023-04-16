@@ -135,6 +135,7 @@ const editarCadastro = async (id) => {
     document.querySelector('#edit-nome').value = posts.nome
     document.querySelector('#edit-dataNascimento').value = posts.dataNascimento
     document.querySelector('#edit-email').value = posts.email
+    // arrumar o bug de apararecer o valor do genero
     document.querySelector('#edit-genero').value = posts.genero
     document.querySelector('#edit-nacionalidade').value = posts.nacionalidade
     document.querySelector('#edit-naturalidade').value = posts.naturalidade
@@ -160,6 +161,7 @@ const saveAlteracao = async () => {
   const dataNascimento = document.querySelector('#edit-dataNascimento').value
   const email = document.querySelector('#edit-email').value
   const genero = document.querySelector('#edit-genero').value
+  console.log(saveAlteracao)
   const nacionalidade = document.querySelector('#edit-nacionalidade').value
   const naturalidade = document.querySelector('#edit-naturalidade').value
   const profissao = document.querySelector('#edit-profissao').value
@@ -221,3 +223,4 @@ function abrirProntuario ()  {
  }
  console.log(dadosPaciente)
 
+ 
