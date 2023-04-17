@@ -36,3 +36,29 @@ const loginUsuario = async () => {
     }
 }
 document.querySelector('#btn-entrar').addEventListener('click', loginUsuario);
+
+
+
+const apiUrl = 'http://localhost:3000/usuarios';
+
+const cadNewUsuario = async (username, password) => {
+  try {
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ username, password })
+    });
+
+    if (response.ok) {
+      return true;
+    } else {
+      return false;
+    }
+  } catch (error) {
+    console.error(error);
+    return false;
+  }
+};
+

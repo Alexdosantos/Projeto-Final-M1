@@ -1,35 +1,39 @@
-const login = async (username) => {
-    const response = await fetch('http://localhost:3000/usuarios', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ username, password })
-    });
-  
-    if (response.ok) {
-      // o usuário foi autenticado com sucesso
-      return true;
-    } else {
-      // as credenciais de login são inválidas
-      return false;
-    }
+const cadNewUsuario = async (username, password) => {
+  console.log(cadNewUsuario)
+  const response = await fetch('http://localhost:3000/usuarios', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ username, password })
+  });
+
+  if (response.ok) {
+    // o usuário foi cadastrado com sucesso
+    return true;
+  } else {
+    // o cadastro falhou
+    return false;
   }
-  
-  const castratoLogin = async () => {
-    const username = document.querySelector('#').value;
-    const password = document.querySelector('#').value
-  
-    const autentificacaoLogin = await login(username)
-  
-    if (autentificacaoLogin) {
-      // o usuário foi autenticado com sucesso
-      window.location.href = 'senha.html' // redireciona para a página 'pacientes.html'
-    } else {
-      // as credenciais de login são inválidas
-      alert('Nome de usuário ou senha incorretos. Tente novamente.')
-    }
+}
+
+const cadastraNewUser = async () => {
+  const username = document.querySelector('#login').value;
+  const password = document.querySelector('#password').value;
+
+  const cadastroSucesso = await cadNewUsuario(username, password);
+  console.log(cadNewUsuario)
+  if (cadastroSucesso) {
+    // o usuário foi cadastrado com sucesso
+    window.location.href = 'senha.html'; // redireciona para a página 'senha.html'
+  } else {
+    // o cadastro falhou
+    alert('Não foi possível cadastrar o usuário. Tente novamente.');
   }
-  
-  document.querySelector('#').addEventListener('click', castratoLogin);
-  
+}
+
+
+
+
+document.querySelector('#btn-prosseguir').addEventListener('click', cadastraNewUser);
+console.log(btn-cadastrar)
