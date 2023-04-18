@@ -12,10 +12,10 @@ window.addEventListener('load', () => {
     
       if (response.ok) {
         // o usuário foi cadastrado com sucesso
-        return true;
+        return true
       } else {
         // o cadastro falhou
-        return false;
+        return false
       }
     }
     
@@ -23,66 +23,70 @@ window.addEventListener('load', () => {
       if (cadastroEmAndamento) {
         return; // se um cadastro já está em andamento, não faz nada
       }
-      cadastroEmAndamento = true; // marca que um cadastro está em andamento
+      cadastroEmAndamento = true // marca que um cadastro está em andamento
     
-      const name = document.querySelector('#new-nome').value;
-      const username = document.querySelector('#new-email').value;
+      const name = document.querySelector('#new-nome').value
+      const username = document.querySelector('#new-email').value
     
       // Armazena os valores de nome e username no localStorage
-      localStorage.setItem('nome', name);
-      localStorage.setItem('username', username);
+      localStorage.setItem('nome', name)
+      localStorage.setItem('username', username)
     
       // Redireciona para a página 'senha.html'
-      window.location.href = 'senha.html';
+      window.location.href = 'senha.html'
     }
     
     const cadastroSenha = async () => {
       if (cadastroEmAndamento) {
         return; // se um cadastro já está em andamento, não faz nada
       }
-      cadastroEmAndamento = true; // marca que um cadastro está em andamento
+      cadastroEmAndamento = true // marca que um cadastro está em andamento
     
-      const password = document.querySelector('#senhaCad').value;
-      const password1 = document.querySelector('#confSenhaCad').value;
-      const modalSucesso = document.querySelector('#modalSenhaCad')
+      const password = document.querySelector('#senhaCad').value
+      const password1 = document.querySelector('#confSenhaCad').value
+    
 
-      cadastrarSenha.onclick = function() {
 
-        modalSucesso.showModal()
-        
-}
+      if (password !== password1) {
+        alert('As senhas não coincidem. Por favor, verifique e tente novamente.')
+        location.reload()
+        return
+      }
+      
     
     
       // Recupera os valores de nome e username do localStorage
-      const nome = localStorage.getItem('nome');
-      const username = localStorage.getItem('username');
+      const nome = localStorage.getItem('nome')
+      const username = localStorage.getItem('username')
     
-      const cadastroSucesso = await cadNewUsuario(nome, username, password, password1);
+      const cadastroSucesso = await cadNewUsuario(nome, username, password, password1)
     
       if (cadastroSucesso) {
         // o usuário foi cadastrado com sucesso
         alert("cadastro bem sucedido")
-         setTimeout(() => {
-           window.location.href = 'index.html';
-          }, 1000);
+         
+        
+        await fetch(resolve => setTimeout(resolve, 3000))
+        window.location.href = 'index.html'
+          
   
         // Redireciona para a página 'index.html' após 3 segundos
         
       } else {
         // o cadastro falhou
-        alert('Não foi possível cadastrar o usuário. Tente novamente.');
+        alert('Não foi possível cadastrar o usuário. Tente novamente.')
       }
     
       cadastroEmAndamento = false; // marca que o cadastro foi finalizado
     }
     
     const cadastrarSenha = document.querySelector('#btn-cadastrarSenha')
-    cadastrarSenha.addEventListener('click', cadastroSenha);
+    cadastrarSenha.addEventListener('click', cadastroSenha)
   
     // Remove this block of code since it's duplicated
     // cadastroSenha.onclick = function() {
     //   modalSucesso.showModal()        
     // }
     
-  });
+  })
   
