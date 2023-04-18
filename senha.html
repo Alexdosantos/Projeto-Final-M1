@@ -15,10 +15,10 @@
         <p class="escolha-senha">Escolha uma senha</p>
 
         <label for="" id="senha">Senha</label>
-        <input type="text" placeholder="Digite seu nome">
+        <input type="password" id="senhaCad" placeholder="Digite seu nome">
 
         <label for="" id="confirma-senha">Confirma senha</label>
-        <input type="email" placeholder="Digite seu e-mail">
+        <input type="password" id="confSenhaCad" placeholder="Digite seu e-mail">
         
         
             <p class="obr">*Precisa no minimo 8 digitos</p>
@@ -29,13 +29,17 @@
         
         
 
-        <button>Prosseguir &rarr;</button>
+        <button id="btn-cadastrarSenha">Prosseguir &rarr;</button>
     </dialog>
     
 
-    <script src="/app.js" ></script>
-    <script src="/pacientesModal.js" ></script>  
-    <script src="/prontuarioModal.js" ></script> 
-    <script src="/login.js"></script>
+    <dialog  id="modalSenhaCad">
+        <p>Parabens vc se cadastrou com sucesso</p>
+        <button id="sucesso">click aqui </button>
+
+    </dialog>
+    
+    <script src="/cadastrar.js" defer></script>
+    <script src="/senha.js"></script>
 </body>
 </html>
