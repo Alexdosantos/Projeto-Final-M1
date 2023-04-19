@@ -77,9 +77,45 @@ closeDadosPaciente.onclick = function() {
     
 }
 
+//const openModalSair = document.querySelector('#btn-sairPacientes');
+//const modalSair = document.querySelector('#modal-sairPagina');
 
 
 
+//openModalSair.addEventListener('mouseout', function() {
+   // modalSair.style.display = 'none';
+  //});
+  
+ // openModalSair.addEventListener('mouseover', function() {
+  //  modalSair.style.display = 'block';
+  //});
+
+
+
+
+//const openModalSair = document.querySelector('#btn-sairPacientes')
+//const modalSair = document.querySelector('#modal-sairPagina')
+
+//openModalSair.onmouseover = function () {
+ // modalSair.showModal()
+//}
+
+//openModalSair.onmouseout = function () {
+  //modalSair.close()
+//}
+
+
+const openModalSair = document.querySelector('#btn-sairPacientes');
+const modalSair = document.querySelector('#modal-sairPagina');
+const modalFechar = document.querySelector('#btn-fecharSair');
+
+  modalFechar.onclick = function () {
+    modalSair.style.display = 'block';
+  };
+
+  openModalSair.onclick = function () {
+    modalSair.style.display = 'none';
+  };
 
 
 

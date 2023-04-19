@@ -4,7 +4,9 @@
     padding: 0;
 }
 
+
 header {
+    
     display: flex;
     justify-content: space-between;
     width: 100vw;
@@ -23,6 +25,7 @@ header img {
     margin-left: 26px;
 }
 .welcome {
+    position: relative;
     display: flex;
     width: 253px;
     height: 29px;
@@ -68,12 +71,61 @@ header img {
 
 }
 
-.welcome button {
+#btn-sairPacientes {
+    
     
     background: transparent;
     border: none;
     cursor: pointer;
 }
+
+
+
+#modal-sairPagina {
+    
+    
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    top: 70px;
+    height: 70px;
+    width: 250px;
+    padding-top: 15px;
+    gap: 5px;
+    
+    
+    background: #feffff;
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border: none;
+
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+#modal-sairPagina a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+#modal-sairPagina button {
+    position: fixed;
+    top: 70px;
+    right: 45px;
+
+    border: none;
+}
+
+
+
 
 .name-paciente p {
 
@@ -338,4 +390,3 @@ td:nth-child(4) {
     border-radius: 8px;
     cursor: pointer;
 }
-

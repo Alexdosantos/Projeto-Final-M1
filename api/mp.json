@@ -51,36 +51,6 @@
       "mae": "Maria",
       "pai": "Gerson",
       "id": 1
-    },
-    {
-      "cpf": "wefwfwefwef",
-      "nome": "wefWFWFWef",
-      "dataNascimento": "2010-10-10",
-      "email": "alexsantos@yahoo.com",
-      "genero": "masculino",
-      "nacionalidade": "brasil",
-      "naturalidade": "wefwef",
-      "profissao": "wFWeffw",
-      "ensino": "Ensino-medio",
-      "estadoCivil": "casado",
-      "mae": "Maria",
-      "pai": "Gerson",
-      "id": 2
-    },
-    {
-      "cpf": "21656554454'",
-      "nome": "Wallace",
-      "dataNascimento": "2010-10-10",
-      "email": "wallace@gmail.com",
-      "genero": "masculino",
-      "nacionalidade": "brasil",
-      "naturalidade": "São Paulo",
-      "profissao": "Programador",
-      "ensino": "Ensino-Fundamental",
-      "estadoCivil": "solteiro",
-      "mae": "Maria",
-      "pai": "Gerson",
-      "id": 3
     }
   ]
 }
