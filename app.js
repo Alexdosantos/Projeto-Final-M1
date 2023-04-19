@@ -13,7 +13,7 @@ const getPosts = async () => {
         <td onclick ="dadosPaciente(${post.id})">${post.nome}</td>
         <td onclick ="dadosPaciente(${post.id})">${post.cpf}</td>
         <td class="btn-pacientes">
-          <button onclick ="abrirProntuario()" class="agenda" id="agenda"><i class="fa-solid fa-calendar-minus" style="color: #017849;"></i></button>
+          <button onclick ="abrirProntuario(${post.id})" class="agenda" id="agenda"><i class="fa-solid fa-calendar-minus" style="color: #017849;"></i></button>
           <button onclick="editarCadastro(${post.id})"   class="editar" id="editar" ><i class="fa-solid fa-pen" style="color: #2f80ed;"></i></i></button>
           <button onclick="deletarCadastro(${post.id})"  class="excluir" id="excluir"><i class="fa-solid fa-trash-can" style="color: #eb5757;"></i></button>
         </td>
@@ -192,8 +192,8 @@ const saveAlteracao = async () => {
 
 document.querySelector('#save-alteracao').addEventListener('click', saveAlteracao)
 
-function abrirProntuario ()  {
-  window.location.href = "prontuario.html"
+function abrirProntuario (id)  {
+  window.location.href = `prontuario.html?id=${id}`
 }
  console.log(abrirProntuario)
 
