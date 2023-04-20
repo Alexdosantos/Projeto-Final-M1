@@ -77,47 +77,34 @@ closeDadosPaciente.onclick = function() {
     
 }
 
-//const openModalSair = document.querySelector('#btn-sairPacientes');
-//const modalSair = document.querySelector('#modal-sairPagina');
+
+const openModalSair = document.querySelector('#btn-sairPacientes')
+const modalSair = document.querySelector('#modal-sairPagina')
+const modalFechar = document.querySelector('#btn-fecharSair')
+
+openModalSair.onclick = function () {
+  if(modalSair.style.display === "none") {
+    modalSair.style.display = 'flex'
+  } else {
+    modalSair.style.display = 'none'
+  }
+};
+
+modalFechar.onclick = function () {
+  modalSair.style.display = 'none'
+};
 
 
-
-//openModalSair.addEventListener('mouseout', function() {
-   // modalSair.style.display = 'none';
-  //});
+// da uma atenção nesse código que nãoe stá funcionando 
+//window.removeEventListener('click', modalFechar)
   
- // openModalSair.addEventListener('mouseover', function() {
-  //  modalSair.style.display = 'block';
-  //});
 
-
-
-
-//const openModalSair = document.querySelector('#btn-sairPacientes')
-//const modalSair = document.querySelector('#modal-sairPagina')
-
-//openModalSair.onmouseover = function () {
- // modalSair.showModal()
-//}
-
-//openModalSair.onmouseout = function () {
-  //modalSair.close()
-//}
-
-
-const openModalSair = document.querySelector('#btn-sairPacientes');
-const modalSair = document.querySelector('#modal-sairPagina');
-const modalFechar = document.querySelector('#btn-fecharSair');
-
-  modalFechar.onclick = function () {
-    modalSair.style.display = 'block';
-  };
-
-  openModalSair.onclick = function () {
-    modalSair.style.display = 'none';
-  };
-
-
+          
+        
+  
+  
+  
+  
 
 
   

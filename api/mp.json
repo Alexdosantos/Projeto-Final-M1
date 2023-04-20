@@ -34,6 +34,13 @@
       "password": "12345",
       "password1": "12345",
       "id": 5
+    },
+    {
+      "nome": "Leiticia",
+      "username": "leiticia@yahoom.com",
+      "password": "12345",
+      "password1": "12345",
+      "id": 6
     }
   ],
   "Cadastro-Pacientes": [
@@ -41,16 +48,16 @@
       "cpf": "2156456454",
       "nome": "Leiticia",
       "dataNascimento": "2010-10-10",
-      "email": "leiticia@yahoo.com",
-      "genero": "Feminino",
+      "email": "leiticia@yahoom.com",
+      "genero": "feminino",
       "nacionalidade": "brasil",
       "naturalidade": "São Paulo",
       "profissao": "Programador",
-      "ensino": "Mestrado",
+      "ensino": "Ensino-Fundamental",
       "estadoCivil": "solteiro",
       "mae": "Maria",
-      "pai": "Gerson",
-      "id": 1
+      "pai": "",
+      "id": 2
     }
   ]
 }
