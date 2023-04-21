@@ -89,14 +89,14 @@ openModalSair.onclick = function () {
     modalSair.style.display = 'none'
   }
 };
-
-modalFechar.onclick = function () {
+function fecharAgora() {
   modalSair.style.display = 'none'
 };
+modalFechar.onclick = fecharAgora
 
 
-// da uma atenção nesse código que nãoe stá funcionando 
-//window.removeEventListener('click', modalFechar)
+// da uma atenção nesse código que não está funcionando 
+//window.addEventListener('click', fecharAgora)
   
 
           

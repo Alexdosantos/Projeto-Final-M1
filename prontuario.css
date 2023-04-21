@@ -15,6 +15,10 @@
     background: #ffffff;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
+#btn-sairProntuario {
+    background: transparent; 
+    border: none;
+}
 
 .search-prontuario{
     display: flex;
@@ -266,7 +270,7 @@
 }
 
 .cardSessao {
-
+    position: relative;
     margin-left: 35.5rem;
     margin-right: 11rem;
     margin-top: -13rem;
@@ -282,7 +286,19 @@
     border-radius: 8px 8px 8px 8px;
 
 }
-.cardSessao img {
+#opcoes {
+    position: absolute;
+    right: 25px;
+    top: 30px;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+    
+
+.cardSessao .img1 {
     width: 48px;
     height: 48px;
     margin-left: 24px;
@@ -338,6 +354,8 @@
 }
 
 .cardfatoRelevante {
+    position: relative;
+    
     margin-left: 35.5rem;
     margin-right: 11rem;
     margin-top: 2rem;
@@ -353,6 +371,17 @@
     border-radius: 8px 8px 8px 8px;
 
 }
+
+#opcoes1{
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .retanguloAzul {
     width: 48px;
     height: 55px;
@@ -412,4 +441,80 @@
     line-height: 170%;
     
     color: #424242;
+}
+
+#filtro {
+   position: absolute;
+    
+    
+    
+    left: 575px;
+    top: 350px;
+    display: flex;
+    gap: 21px;
+    
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 17px;
+
+
+    color: #757575;
+}
+
+
+.fTodos {
+    display: flex;
+    gap: 6px;
+}
+
+.fTodos span {
+   color:#212121 ; 
+}
+
+#btn-Filtrar {
+    position: relative;
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+
+.mini-cardFiltro {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 299px;
+    top: 370px;
+
+    width: 140px;
+    height: 80px;
+
+    background: #ffffff;
+
+
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 0px 8px 8px;
+}
+.mini-cardFiltro button {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    
+    color: #424242;
+    background: transparent;
+    border: none;
+}
+.mini-cardFiltro button:hover {
+    font-size: 18px;
+    transition: .2s;
+
+    background: #C5F2E0;
+    border-radius: 8px 0px 0px 0px;
 }

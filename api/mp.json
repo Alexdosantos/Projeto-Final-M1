@@ -58,6 +58,21 @@
       "mae": "Maria",
       "pai": "",
       "id": 2
+    },
+    {
+      "cpf": "27527727275272725",
+      "nome": "Wallace",
+      "dataNascimento": "2010-10-10",
+      "email": "wallace@gmail.com",
+      "genero": "masculino",
+      "nacionalidade": "argentina",
+      "naturalidade": "São Paulo",
+      "profissao": "Programador",
+      "ensino": "Ensino-Fundamental",
+      "estadoCivil": "solteiro",
+      "mae": "Maria",
+      "pai": "Gerson",
+      "id": 3
     }
   ]
 }

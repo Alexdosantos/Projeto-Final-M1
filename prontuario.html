@@ -19,7 +19,7 @@
                 <h4 class="bem-vindo">Bem vindo(a), <span class="name-bold">Alex</span></h4> 
                 <!-- <h4 class="name">Alex</h4> -->
             </div>
-                <button><i class="fa-solid fa-caret-down"></i></button> 
+                <button id="btn-sairProntuario"><i class="fa-solid fa-2xl fa-caret-down"></i></button> 
             </div>
         
        
@@ -130,12 +130,48 @@
                 
 
             </main>    
+            <div>
+                <div id="filtro">
+                    <img src="/assets/Rectangle.svg" alt="">
+                    <p class="fTodos">Filtra:<span>Todos</span></p>
+                    <button id="btn-Filtrar"><i class="fa-solid fa-2xl fa-caret-down"></i></button>
+    
+                    
+                </div>
+                
+                    
+
+            </div>
+
+            <div class="mini-cardFiltro" id="mini-cardFiltro">
+                <!-- <select id="mini-cardFiltro" name="mini-cardFiltro">
+                    <option>Todos</option>
+                    <option value="Sessão">Sessão</option>
+                    <option value="Fato Relevante">Fato Relevante</option>
+                    
+                </select>
+                      -->
+                
+                <button>Todos</button>
+                <button>Sessão</button>
+                <button>Fato Relevante</button>
+            
+
+            </div>  
+            
+            
+
 
             <section id="section-cardSessao">
                 <div class="cardSessao">
                     
-                    <img src="/assets/logo sessão.svg" alt="">
-                    <h4>Sessão 01</h4>
+                    <img class="img1" src="/assets/logo sessão.svg" alt="">
+                    
+                        <h4>Sessão 01</h4>
+                        <button id="opcoes"><img src="/assets/3 pontos.svg"alt=""></button>
+
+                    
+                    
                     <p class="date-sessao">01 de setembro de 2022</p>
                     <p class="textInfo-sessao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
                         Repellendus totam amet provident velit voluptatibus cum 
@@ -147,10 +183,14 @@
             <section id="section-fatoRelevante">
                 <img class="retanguloAzul" src="/assets/Rectangle azul.svg" alt="">
                 
+                
                 <div class="cardfatoRelevante">
-                   
                     <img class="img-fatorelevante" src="/assets/logo fato relevante.svg" alt="">
+                    
                     <h4>Fato Relevante</h4>
+                    <button id="opcoes1"><img src="/assets/3 pontos.svg"alt=""></button>
+                    
+                    
                     <p class="dateFatorelevante">01 de setembro de 2022</p>
                     <p class="textInfo-FatoRelefante">Cliente não compareceu</p>
                 </div>
