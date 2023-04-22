@@ -18,6 +18,7 @@
 #btn-sairProntuario {
     background: transparent; 
     border: none;
+    cursor: pointer;
 }
 
 .search-prontuario{
