@@ -194,6 +194,8 @@ document.querySelector('#save-alteracao').addEventListener('click', saveAlteraca
 
 function abrirProntuario (id)  {
   window.location.href = `prontuario.html?id=${id}`
+  
+  
 }
  console.log(abrirProntuario)
 

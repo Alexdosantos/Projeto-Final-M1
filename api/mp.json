@@ -61,7 +61,7 @@
     },
     {
       "cpf": "27527727275272725",
-      "nome": "Wallace",
+      "nome": "Wallace samuel",
       "dataNascimento": "2010-10-10",
       "email": "wallace@gmail.com",
       "genero": "masculino",
@@ -73,6 +73,36 @@
       "mae": "Maria",
       "pai": "Gerson",
       "id": 3
+    },
+    {
+      "cpf": "331.369.666.58",
+      "nome": "Alex dos santos ",
+      "dataNascimento": "2011-10-10",
+      "email": "alexsantos@yahoo.com",
+      "genero": "masculino",
+      "nacionalidade": "brasil",
+      "naturalidade": "São Paulo",
+      "profissao": "Programador",
+      "ensino": "Ensino-Fundamental",
+      "estadoCivil": "casado",
+      "mae": "Maria",
+      "pai": "Gerson",
+      "id": 4
+    },
+    {
+      "cpf": "2156456454",
+      "nome": "Wallace samuel",
+      "dataNascimento": "2011-11-13",
+      "email": "wallace@gmail.com",
+      "genero": "masculino",
+      "nacionalidade": "brasil",
+      "naturalidade": "São Paulo",
+      "profissao": "Programador",
+      "ensino": "Ensino-Fundamental",
+      "estadoCivil": "solteiro",
+      "mae": "Maria",
+      "pai": "Gerson",
+      "id": 5
     }
   ]
 }

@@ -36,5 +36,14 @@ function fecharModalFato() {
 }
 
 
+const BtnFiltraTodos = document.querySelector('#btn-Filtrar')
+const miniModal = document.querySelector('#mini-cardFiltro')
 
+BtnFiltraTodos.onclick = function () {
+    if(miniModal.style.display === 'none') {
+        miniModal.style.display = 'flex'
+    }else {
+        miniModal.style.display = 'none'
+    }
+}
   

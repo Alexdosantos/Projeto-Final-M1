@@ -1,18 +1,25 @@
-
 const parametrosUrl = window.location.search
-const paramentros = new URLSearchParams(parametrosUrl)
-const id = paramentros.get('id')
+const parametros = new URLSearchParams(parametrosUrl)
+const id = parametros.get('id')
 
-console.log(id)
+async function carregarDadosPaciente() {
+    try {
+        const api = await fetch(`http://localhost:3000/Cadastro-Pacientes/${id}`)
+        const paciente = await api.json()
 
+        const nome = paciente.nome
+        const dataNasc = paciente.dataNascimento
+        const profissao = paciente.profissao
+        const ensino = paciente.ensino
 
-const BtnFiltraTodos = document.querySelector('#btn-Filtrar')
-const miniModal = document.querySelector('#mini-cardFiltro')
-
-BtnFiltraTodos.onclick = function () {
-    if(miniModal.style.display === 'none') {
-        miniModal.style.display = 'flex'
-    }else {
-        miniModal.style.display = 'none'
-    }
+        document.getElementById('nome-idPaciente').innerHTML = nome
+        document.getElementById('nasc-idPaciente').innerHTML = dataNasc
+        document.getElementById('profissao-idPaciente').innerHTML = profissao
+        document.getElementById('ensino-idPaciente').innerHTML = ensino
+        
+    } catch (error) {
+        console.log(error)
+    }    
 }
+
+carregarDadosPaciente()
