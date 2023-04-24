@@ -55,9 +55,6 @@ const updatePost = async (updatedPost, id) => {
     IdAtual = null
 }
 
-//document.querySelector('#save-alteracao').addEventListener('click', updatePost)
-//console.log(updatePost)
-
 
 const cadastro = async (cad) =>{
   await fetch ("http://localhost:3000/cadastro-pacientes" , {
@@ -70,6 +67,9 @@ const cadastro = async (cad) =>{
   })
 
 }
+
+
+
 
 const saveCadastro = async () =>  {
   
@@ -86,6 +86,7 @@ const saveCadastro = async () =>  {
    const mae= document.querySelector('#mae').value
    const pai = document.querySelector('#pai').value
 
+   
    const post = {
       cpf,
       nome,
@@ -99,10 +100,13 @@ const saveCadastro = async () =>  {
       estadoCivil,
       mae,
       pai,
+      
   }
 
 
   await cadastro(post)
+
+  
 
 }
 
@@ -161,7 +165,7 @@ const saveAlteracao = async () => {
   const dataNascimento = document.querySelector('#edit-dataNascimento').value
   const email = document.querySelector('#edit-email').value
   const genero = document.querySelector('#edit-genero').value
-  console.log(saveAlteracao)
+  //console.log(saveAlteracao)
   const nacionalidade = document.querySelector('#edit-nacionalidade').value
   const naturalidade = document.querySelector('#edit-naturalidade').value
   const profissao = document.querySelector('#edit-profissao').value
@@ -169,6 +173,7 @@ const saveAlteracao = async () => {
   const estadoCivil = document.querySelector('#edit-estadoCivil').value
   const mae = document.querySelector('#edit-mae').value
   const pai = document.querySelector('#edit-pai').value
+  
 
   const updatedPost = {
     cpf,
@@ -183,6 +188,7 @@ const saveAlteracao = async () => {
     estadoCivil,
     mae,
     pai,
+    
   }
 
   await updatePost(updatedPost, editarId)
@@ -217,6 +223,9 @@ function abrirProntuario (id)  {
      document.querySelector('#dados-estadoCivil').value = posts.estadoCivil
      document.querySelector('#dados-mae').value = posts.mae
      document.querySelector('#dados-pai').value = posts.pai
+     
+
+     
  
      modalDadosPaciente.showModal()
     
