@@ -68,33 +68,73 @@
       "mae": "Maria",
       "pai": "Antonio",
       "id": 8
+    },
+    {
+      "cpf": "391.078.80",
+      "nome": "Wallace samuel",
+      "dataNascimento": "",
+      "email": "wallace@gmail.com",
+      "genero": "Escolha uma opção",
+      "nacionalidade": "Escolha uma opção",
+      "naturalidade": "",
+      "profissao": "",
+      "ensino": "Escolha uma opção",
+      "estadoCivil": "casado",
+      "mae": "",
+      "pai": "",
+      "id": 9
     }
   ],
   "sessoesPaciente": [
     {
-      "data": "5154-05-11",
-      "horaInicio": "04:05",
-      "horaFinal": "05:15",
-      "titulo": "5156511561561",
-      "resumo": "65151651565616",
-      "idPaciente": 4,
-      "id": 1
-    }
-  ],
-  "fatoRelevante": [
-    {
-      "data": "2020-11-10",
-      "titulo": "boss ",
-      "descricao": "jwnrgeangaergaeger",
+      "data": "1989-05-10",
+      "horaInicio": "10:11",
+      "horaFinal": "04:04",
+      "titulo": "Consulta ",
+      "resumo": "teste Alex sessao",
       "idPaciente": 4,
       "id": 1
     },
     {
-      "data": "54154-02-15",
-      "titulo": "Exame orelha",
-      "descricao": "i758i75i758i578i57i57i7",
+      "data": "2023-05-10",
+      "horaInicio": "10:05",
+      "horaFinal": "10:55",
+      "titulo": "Teste Dijerson",
+      "resumo": "Teste Dijerson",
       "idPaciente": 6,
       "id": 2
+    },
+    {
+      "data": "2023-05-05",
+      "horaInicio": "15:00",
+      "horaFinal": "16:00",
+      "titulo": "Ciele teste",
+      "resumo": "teste Ciele ",
+      "idPaciente": 7,
+      "id": 3
+    }
+  ],
+  "fatoRelevante": [
+    {
+      "data": "2023-04-25",
+      "titulo": "Consulta",
+      "descricao": "Alex teste",
+      "idPaciente": 4,
+      "id": 1
+    },
+    {
+      "data": "2023-05-25",
+      "titulo": "Teste Fato",
+      "descricao": "Teste Fato Relevante Dijerson",
+      "idPaciente": 6,
+      "id": 2
+    },
+    {
+      "data": "2023-05-05",
+      "titulo": "Fato Ciele",
+      "descricao": "Relevante ciele ",
+      "idPaciente": 7,
+      "id": 3
     }
   ]
 }

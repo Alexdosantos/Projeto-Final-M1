@@ -42,8 +42,8 @@ window.addEventListener('DOMContentLoaded', getPosts)
 
 // fILTRA PACIENTES 
 
-const filtrarPacientes = async (filtro) => {
-  const apiResponse = await fetch(`http://localhost:3000/cadastro-pacientes?nome_like=${filtro}`)
+const filtrarPacientes = async (nome) => {
+  const apiResponse = await fetch(`http://localhost:3000/cadastro-pacientes?nome_like=${nome}`)
   const pacientes = await apiResponse.json()
   return pacientes
 }
@@ -85,9 +85,14 @@ const atualizarTabelaPacientes = async () => {
       </tbody>
     </table>
   `
+  
 }
 
-document.querySelector('#btn-FiltrarPacients').addEventListener('input', atualizarTabelaPacientes)
+document.querySelector('#btn-FiltrarPacients').addEventListener('click', atualizarTabelaPacientes)
+
+document.querySelector('#input-btn').addEventListener('input', async () => {
+  await atualizarTabelaPacientes();
+});
 
 
 

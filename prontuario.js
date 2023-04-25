@@ -83,7 +83,7 @@ const salveSessao = async () => {
 
 const dadoSessao = async () =>  {
     const postSessao = document.querySelector('#section-cardSessao')
-    const apiSessao = await fetch ("http://localhost:3000/sessoesPaciente")
+    const apiSessao = await fetch (`http://localhost:3000/sessoesPaciente?idPaciente=${id}`)
     const newdados =  await apiSessao.json()
     let conteudo = ''
     
@@ -112,8 +112,9 @@ window.addEventListener('DOMContentLoaded' , dadoSessao)
 
 
 const dadosfatoRelevante = async () =>  {
+   
     const postfato = document.querySelector('#section-fatoRelevante')
-    const apifato = await fetch ("http://localhost:3000/fatoRelevante")
+    const apifato = await fetch (`http://localhost:3000/fatoRelevante?idPaciente=${id}`)
     const newfato =  await apifato.json()
     let conteudo = ''
 
