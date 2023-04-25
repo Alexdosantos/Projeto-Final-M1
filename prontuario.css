@@ -279,13 +279,19 @@
     
     box-sizing: border-box;
 
-
+    
     background: #ffffff;
     border: 1px solid #E0E0E0;
     
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px 8px 8px 8px;
 
+}
+.corAzul {
+    width: 10px;
+    height: 150px;
+    background: #2F80ED;
+    
 }
 #opcoes {
     position: absolute;

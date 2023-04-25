@@ -185,27 +185,7 @@
     flex-direction: column;
 }
 
-.tituloTextModal {
-    box-sizing: border-box;
 
-    width: 578px;
-    height: 153px;
-
-    /* Branco */
-
-    background: #FFFFFF;
-    /* Gray 4 */
-
-    border: 1px solid #BDBDBD;
-    border-radius: 8px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-        
-}
 
 #modalForm-Prontuario1 #titulo-input {
     box-sizing: border-box;
@@ -222,7 +202,7 @@
     flex-grow: 0;
 }
 
-#modalForm-Prontuario1 #tituloTextModal{
+#modalForm-Prontuario1 .tituloTextModal{
 
     box-sizing: border-box;
 

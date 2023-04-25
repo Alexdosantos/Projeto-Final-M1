@@ -22,22 +22,7 @@
       "estadoCivil": "casado",
       "mae": "Maria",
       "pai": "Gerson",
-      "id": 4,
-      "sessoesPaciente": {
-        "data": "",
-        "horaInicio": "",
-        "horaFim": "",
-        "titulo": "",
-        "resumo": "",
-        "valor": "",
-        "forma": "",
-        "status": ""
-      },
-      "FatoRelevante": {
-        "data": "",
-        "titulo": "",
-        "descricao": ""
-      }
+      "id": 4
     },
     {
       "cpf": "391.078.",
@@ -53,6 +38,63 @@
       "mae": "Maria",
       "pai": "Gerson",
       "id": 6
+    },
+    {
+      "cpf": "2156456454",
+      "nome": "Franciele dos santos ",
+      "dataNascimento": "2011-12-05",
+      "email": "ciele@gmail.com",
+      "genero": "masculino",
+      "nacionalidade": "brasil",
+      "naturalidade": "São Paulo",
+      "profissao": "Programador",
+      "ensino": "Gradução",
+      "estadoCivil": "solteiro",
+      "mae": "Maria",
+      "pai": "Gerson",
+      "id": 7
+    },
+    {
+      "cpf": "2156456454",
+      "nome": "Alan santos ",
+      "dataNascimento": "1986-05-10",
+      "email": "wallace@gmail.com",
+      "genero": "masculino",
+      "nacionalidade": "brasil",
+      "naturalidade": "São Paulo",
+      "profissao": "Programador",
+      "ensino": "Ensino-Fundamental",
+      "estadoCivil": "casado",
+      "mae": "Maria",
+      "pai": "Antonio",
+      "id": 8
+    }
+  ],
+  "sessoesPaciente": [
+    {
+      "data": "5154-05-11",
+      "horaInicio": "04:05",
+      "horaFinal": "05:15",
+      "titulo": "5156511561561",
+      "resumo": "65151651565616",
+      "idPaciente": 4,
+      "id": 1
+    }
+  ],
+  "fatoRelevante": [
+    {
+      "data": "2020-11-10",
+      "titulo": "boss ",
+      "descricao": "jwnrgeangaergaeger",
+      "idPaciente": 4,
+      "id": 1
+    },
+    {
+      "data": "54154-02-15",
+      "titulo": "Exame orelha",
+      "descricao": "i758i75i758i578i57i57i7",
+      "idPaciente": 6,
+      "id": 2
     }
   ]
 }

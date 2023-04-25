@@ -40,6 +40,58 @@ const getPosts = async () => {
 
 window.addEventListener('DOMContentLoaded', getPosts)
 
+// fILTRA PACIENTES 
+
+const filtrarPacientes = async (filtro) => {
+  const apiResponse = await fetch(`http://localhost:3000/cadastro-pacientes?nome_like=${filtro}`)
+  const pacientes = await apiResponse.json()
+  return pacientes
+}
+
+
+const atualizarTabelaPacientes = async () => {
+  const postagem = document.querySelector('#content')
+  const filtro = document.querySelector('#input-btn').value
+  const pacientes = await filtrarPacientes(filtro)
+  let conteudo = ''
+
+  pacientes.forEach(paciente => {
+    conteudo += `
+      <tr>
+        <td onclick="dadosPaciente(${paciente.id})">${paciente.id}</td>
+        <td onclick="dadosPaciente(${paciente.id})">${paciente.nome}</td>
+        <td onclick="dadosPaciente(${paciente.id})">${paciente.cpf}</td>
+        <td class="btn-pacientes">
+          <button onclick="abrirProntuario(${paciente.id})" class="agenda" id="agenda"><i class="fa-solid fa-calendar-minus" style="color: #017849;"></i></button>
+          <button onclick="editarCadastro(${paciente.id})"   class="editar" id="editar" ><i class="fa-solid fa-pen" style="color: #2f80ed;"></i></i></button>
+          <button onclick="deletarCadastro(${paciente.id})"  class="excluir" id="excluir"><i class="fa-solid fa-trash-can" style="color: #eb5757;"></i></button>
+        </td>
+      </tr>
+    `
+  });
+
+  postagem.innerHTML = `
+    <table>
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Nome</th>
+          <th>CPF</th>
+          <th class="acao">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${conteudo}
+      </tbody>
+    </table>
+  `
+}
+
+document.querySelector('#btn-FiltrarPacients').addEventListener('input', atualizarTabelaPacientes)
+
+
+
+
 //AQUI É A CRIAÇÃO DO CADASTRAMENTO
 
 
@@ -190,6 +242,7 @@ const saveAlteracao = async () => {
     pai,
     
   }
+  
 
   await updatePost(updatedPost, editarId)
   modalEditPaciente.close()

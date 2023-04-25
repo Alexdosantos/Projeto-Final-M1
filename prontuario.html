@@ -164,6 +164,10 @@
 
             <section id="section-cardSessao">
                 <div class="cardSessao">
+                    <div class="corAzul">
+                        
+
+                    </div>
                     
                     <img class="img1" src="/assets/logo sessão.svg" alt="">
                     
@@ -172,8 +176,8 @@
 
                     
                     
-                    <p class="date-sessao">01 de setembro de 2022</p>
-                    <p class="textInfo-sessao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+                    <p class="date-sessao" id="date-sessao">01 de setembro de 2022</p>
+                    <p class="textInfo-sessao" id="textInfo-sessao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
                         Repellendus totam amet provident velit voluptatibus cum 
                         delectus quisquam, esse ullam quis placeat,<br> officiis excepturi?
                         Assumenda vero unde dolore aliquam eos quisquam? </p>
@@ -260,7 +264,7 @@
     
                     <div class="textmodalForm">
                         <label for="Resumo da sessão*">Resumo da sessão*</label>
-                        <textarea name="" id="tituloTextModal" cols="30" rows="10"></textarea>
+                        <textarea name="" id="tituloTextModal"  class="tituloTextModal" cols="30" rows="10"></textarea>
                     </div>
 
                 </div>
@@ -273,7 +277,7 @@
 
                     <div class="btn-endModalProntuario">
                         <button class="btn-cancelarSessao" id="btn-cancelarSessao">Cancelar</button>
-                        <button class="btn-criarNovasessao" id="btn-criarNovasessao" >Criar</button>
+                        <button class="btn-criarNovasessao" type="button" id="btn-criarNovasessao" >Criar</button>
 
                     </div>
 
@@ -316,12 +320,12 @@
                 <div id="modalForm-Prontuario">
                     <div class="textmodalForm1">
                         <label for="data">Data*</label>
-                        <input type="date">
+                        <input id="dataFato" type="date">
     
                     </div>
                     <div class="textmodalForm1">
                         <label for="data">Titulo*</label>
-                        <input class="text-inputFato" type="text">
+                        <input id="tituloFato" class="text-inputFato" type="text">
     
                     </div>
                     
@@ -333,7 +337,7 @@
     
                     <div class="textmodalForm">
                         <label for="Resumo da sessão*">Descrição*</label>
-                        <textarea name="" id="tituloTextModal" cols="30" rows="10"></textarea>
+                        <textarea name="" id="tituloFatoModal"  class="tituloTextModal" cols="30" rows="10"></textarea>
                     </div>
 
                 </div>
@@ -346,7 +350,7 @@
 
                     <div class="btn-endModalProntuario">
                         <button class="btn-cancelarFato" id="btn-cancelarFato">Cancelar</button>
-                        <button class="btn-criarFatoRelevante" id="btn-criarFatoRelevante" >Criar</button>
+                        <button class="btn-criarFatoRelevante" type="button" id="btn-criarFatoRelevante" >Criar</button>
                         
                     </div>
 
