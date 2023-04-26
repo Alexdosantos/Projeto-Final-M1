@@ -6,6 +6,13 @@
       "password": "@Wloren05",
       "password1": "@Wloren05",
       "id": 1
+    },
+    {
+      "nome": "Alex dos santos",
+      "username": "alexsantos@yahoo.com",
+      "password": "Wloren05",
+      "password1": "Wloren05",
+      "id": 2
     }
   ],
   "Cadastro-Pacientes": [
@@ -20,8 +27,8 @@
       "profissao": "Programador",
       "ensino": "Ensino-Fundamental",
       "estadoCivil": "casado",
-      "mae": "Maria",
-      "pai": "Gerson",
+      "mae": "maria",
+      "pai": "gerson",
       "id": 4
     },
     {
@@ -83,6 +90,21 @@
       "mae": "",
       "pai": "",
       "id": 9
+    },
+    {
+      "cpf": "2156456454",
+      "nome": "Lorena",
+      "dataNascimento": "2016-05-02",
+      "email": "Lorena",
+      "genero": "masculino",
+      "nacionalidade": "brasil",
+      "naturalidade": "São Paulo",
+      "profissao": "Modelo",
+      "ensino": "Mestrado",
+      "estadoCivil": "solteiro",
+      "mae": "ERIKA",
+      "pai": "ALEX",
+      "id": 10
     }
   ],
   "sessoesPaciente": [

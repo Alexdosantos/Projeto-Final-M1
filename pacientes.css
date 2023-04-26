@@ -391,3 +391,71 @@ td:nth-child(4) {
     border-radius: 8px;
     cursor: pointer;
 }
+
+
+/* AQUI É A ANIMAÇÃO SUCESSO*/
+
+#card-sucesso {
+    
+    inset: 0;
+    margin: auto;
+    
+    
+    width: 557px;
+    height: 444px;
+
+    background: #ffffff;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.15);
+}
+
+#card-sucesso::backdrop {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+#img-sucesso {
+    
+    width: 214px;
+    height: 214px;
+    padding-left: 170px;
+    padding-top: 20px;
+}
+
+#card-sucesso p {
+
+    padding-top: 95px;
+
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 128%;
+    
+    text-align: center;
+
+    color: #00995D;
+}
+
+#btn-fecharSucesso{
+    position: absolute;
+    left: 26%;
+    bottom: 20px;
+
+    width: 264px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+
+    background: #017849;
+    border-radius: 8px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;  
+
+    color: #FFFFFF;
+    cursor: pointer;
+
+}

@@ -1,3 +1,6 @@
+
+
+
 const getPosts = async () => {
   const postagem = document.querySelector('#content')
   const apiResponse = await fetch("http://localhost:3000/cadastro-pacientes")
@@ -159,15 +162,38 @@ const saveCadastro = async () =>  {
       pai,
       
   }
-
+ 
 
   await cadastro(post)
 
   
 
 }
+//const BtnSalvarCadastro = document.querySelector('#criar-newPaciente')
+//BtnSalvarCadastro.addEventListener('click', saveCadastro )
 
-document.querySelector('#criar-newPaciente').addEventListener('click', saveCadastro )
+
+
+// AQUI É A LÓGICA DO MINI MODAL DE NOVO CADASTRO COM SUCESSO 
+ 
+const closemiModal = document.querySelector('#btn-fecharSucesso');
+ const miModal = document.querySelector('#card-sucesso');
+ const BtnSalvarCadastro = document.querySelector('#criar-newPaciente')
+ 
+ 
+ BtnSalvarCadastro.addEventListener('click', () => {
+   
+  miModal.showModal(); 
+  setTimeout(sucesso , 5000);
+   
+ });
+ 
+ closemiModal.addEventListener('click', () => {
+      
+    saveCadastro()
+});
+ 
+
 
 
 //AQUI É A PARTE DE DELETAR
@@ -292,4 +318,7 @@ function abrirProntuario (id)  {
  }
  console.log(dadosPaciente)
 
+
+  
+ 
  

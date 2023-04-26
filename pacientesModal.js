@@ -95,12 +95,8 @@ function fecharAgora() {
 modalFechar.onclick = fecharAgora
 
 
-// da uma atenção nesse código que não está funcionando 
-//window.addEventListener('click', fecharAgora)
-  
 
-          
-        
+
   
   
   
