@@ -276,7 +276,8 @@
     position: relative;
     margin-left: 37.5rem;
     margin-right: 11rem;
-    margin-top: -15rem;
+    margin-top: 100px;
+    top: -375px;
     
     
     box-sizing: border-box;
@@ -293,7 +294,15 @@
 
 }
 
+.barraVerde{
+    position: absolute;
+    bottom: 170px;
+    width: 48px;
+    height: 45px;
+    left: 33px;
+    
 
+}
 
 #opcoes {
     position: absolute;
@@ -365,10 +374,10 @@
 
 .cardfatoRelevante {
     position: relative;
-    
+    top: -345px;
     margin-left: 37.5rem;
     margin-right: 11rem;
-    margin-top: 2rem;
+    margin-bottom: 30px;
     padding-top: 0px 0px 0px 0px;
     
     box-sizing: border-box;
@@ -395,10 +404,12 @@
 }
 
 .retanguloAzul {
+    position: relative;
+    bottom: 375px;
     width: 48px;
     height: 59px;
     margin-left: 635px;
-    margin-top: 0px;
+    
    
 
 }

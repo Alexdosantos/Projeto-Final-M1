@@ -82,7 +82,7 @@ const salveSessao = async () => {
 
 
 const dadoSessao = async () =>  {
-    const postSessao = document.querySelector('#section-cardSessao')
+    const postSessao = document.querySelector('#cardsessaonew')
     const apiSessao = await fetch (`http://localhost:3000/sessoesPaciente?idPaciente=${id}`)
     const newdados =  await apiSessao.json()
     let conteudo = ''
@@ -91,24 +91,26 @@ const dadoSessao = async () =>  {
     newdados.forEach(news => {
         
         conteudo += `
-        <img class="BarraVerde" src="/assets/barra verde.svg" alt="">
-
-        <div onclick="abrirSessaoValore(${news.id})" class="cardSessao">
-            <div class="corAzul"></div> 
+        <section id="section-cardSessao">
+        <img class="barraVerde" src="/assets/barra verde.svg" alt="">
+            <div> 
                 
 
-            
-           
-            <img class="img1" src="/assets/logo sessão.svg" alt="">
-            
-                <h4>Sessão 01</h4>
-                <button id="opcoes"><img src="/assets/3 pontos.svg"alt=""></button>
+                <div class="cardSessao">
+                    <div class="corverde"></div>
+                    
+                    <img class="img1" src="/assets/logo sessão.svg" alt="">
+                    
+                        <h4>Sessão 01</h4>
+                        <button id="opcoes"><img src="/assets/3 pontos.svg"alt=""></button>
 
-            
-            
-            <p class="date-sessao" id="date-sessao">${news.data}</p>
-            <p class="textInfo-sessao" id="textInfo-sessao">${news.resumo}</p>
-        </div>
+                    
+                    
+                    <p class="date-sessao" id="date-sessao">${news.data}</p>
+                    <p class="textInfo-sessao" id="textInfo-sessao">${news.resumo}</p>
+                </div>
+            </div>
+            </section>
 
         
     `
