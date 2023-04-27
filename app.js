@@ -1,4 +1,9 @@
+const nome =localStorage.getItem('nome')
+const primeiroNome = nome.split(' ')[0]
+document.querySelector('.name-bold').innerHTML = primeiroNome
 
+const emailLogin = localStorage.getItem('username')
+document.querySelector('.email-medico').innerHTML = emailLogin
 
 
 const getPosts = async () => {
@@ -100,6 +105,7 @@ document.querySelector('#input-btn').addEventListener('input', async () => {
 
 
 
+
 //AQUI É A CRIAÇÃO DO CADASTRAMENTO
 
 
@@ -172,26 +178,29 @@ const saveCadastro = async () =>  {
 //const BtnSalvarCadastro = document.querySelector('#criar-newPaciente')
 //BtnSalvarCadastro.addEventListener('click', saveCadastro )
 
-
-
 // AQUI É A LÓGICA DO MINI MODAL DE NOVO CADASTRO COM SUCESSO 
- 
 const closemiModal = document.querySelector('#btn-fecharSucesso');
- const miModal = document.querySelector('#card-sucesso');
- const BtnSalvarCadastro = document.querySelector('#criar-newPaciente')
- 
- 
- BtnSalvarCadastro.addEventListener('click', () => {
-   
-  miModal.showModal(); 
-  setTimeout(sucesso , 5000);
-   
- });
- 
- closemiModal.addEventListener('click', () => {
-      
-    saveCadastro()
+const miModal = document.querySelector('#card-sucesso');
+const BtnSalvarCadastro = document.querySelector('#criar-newPaciente')
+
+
+BtnSalvarCadastro.addEventListener('click', async () => {
+  
+await miModal.showModal(); 
+ setTimeout(sucesso , 5000);
+  
 });
+
+closemiModal.addEventListener('click', () => {
+     
+   saveCadastro()
+});
+
+
+
+
+ 
+
  
 
 
@@ -320,5 +329,4 @@ function abrirProntuario (id)  {
 
 
   
- 
  

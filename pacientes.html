@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/pacientes.css">
     <link rel="stylesheet" href="/pacientesModal.css">
     <script src="https://kit.fontawesome.com/7b81108c6c.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/assets/logo meus pacientes.png" type="image/x-icon">
+    <link rel="icon" href="/assets/logo meus pacientes.png" type="image/x-icon">
     <title>Pacientes</title>
 </head>
 <body >
@@ -30,7 +32,7 @@
                     
                     <p class="medico">Admin</p>
                     <p class="email-medico">alex@yahoo.com</p>
-                    <img src="/assets/LEKO.png" alt="">
+                    <img src="/assets/medicos.jpg" alt="">
                     
                     <div class="sair-geral">
                       <i class="fa-solid fa-arrow-turn-up"style="color: #1fb257;"></i>
@@ -243,9 +245,9 @@
               </div>
 
               <div class="save">
-                <button class="cancelar-newPaciente" id="cancelar-newPaciente" >Cancelar</button>
+                <button class="cancelar-newPaciente" type="button" id="cancelar-newPaciente" >Cancelar</button>
                
-                <button class="criar-newPaciente" id="criar-newPaciente">Criar</button>
+                <button class="criar-newPaciente" type="button" id="criar-newPaciente">Criar</button>
               </div>
 
 
@@ -262,6 +264,7 @@
                       <!-- AQUI COMEÇA O MODAL DE EDIÇÃO DE PACIENTES-->
 
     <dialog  class="editar-pacientes" id="editar-pacientes">
+     <form action="">
       <div class="header-modal" >
         <h4>Editar dados do paciente</h4>
         <button id="close-modal-editPacientes"><i class="fa-sharp fa-2xl fa-solid fa-circle-xmark"   style="color: #09121f;"></i></button>
@@ -377,8 +380,8 @@
           </div>
 
           <div class="save">
-            <button class="cancelarEditPacientes" id="cancelarEditPacientes">Cancelar</button>
-            <button class="save-alteracao" id="save-alteracao">Salvar alterações</button>
+            <button class="cancelarEditPacientes" type="button" id="cancelarEditPacientes">Cancelar</button>
+            <button class="save-alteracao" type="button" id="save-alteracao">Salvar alterações</button>
           </div>
 
 
@@ -387,7 +390,7 @@
       </div>
         
         
-      
+    </form>  
         
 </dialog>
 
@@ -398,120 +401,121 @@
 
 
         <dialog  class="dados-pacientes" id="dados-pacientes">
-          <div class="header-modal" >
-            <h4>Dados do pacientes</h4>
-            <button class="close-modal-dadosPaciente" id="close-modal-dadosPaciente"><i class="fa-sharp fa-2xl fa-solid fa-circle-xmark"   style="color: #09121f;"></i></button>
-          </div>
+              <form action="">
+                    <div class="header-modal" >
+                      <h4>Dados do pacientes</h4>
+                      <button class="close-modal-dadosPaciente" id="close-modal-dadosPaciente"><i class="fa-sharp fa-2xl fa-solid fa-circle-xmark"   style="color: #09121f;"></i></button>
+                    </div>
 
-          <div class="grid-pai">
-              <div class="grid-modal">
-                <label for="" class="cpf" >CPF</label>
-                <input type="text" id="dados-cpf" class="CPF" placeholder="Digite" disabled>
-              </div>
+                    <div class="grid-pai">
+                        <div class="grid-modal">
+                          <label for="" class="cpf" >CPF</label>
+                          <input type="text" id="dados-cpf" class="CPF" placeholder="Digite" disabled>
+                        </div>
 
-              <div class="grid-modal">
-                <label for="" class="nome">Nome</label>
-                <input type="text"  id="dados-nome" class="CPF" placeholder="Digite" disabled>
-              </div>
+                        <div class="grid-modal">
+                          <label for="" class="nome">Nome</label>
+                          <input type="text"  id="dados-nome" class="CPF" placeholder="Digite" disabled>
+                        </div>
 
-              <div class="grid-modal">
-                <label for="" class="dateNas">Data de  Nascimento</label>
-                <input type="date" id="dados-dataNascimento" class="CPF" placeholder="Digite" disabled>
-              </div>
+                        <div class="grid-modal">
+                          <label for="" class="dateNas">Data de  Nascimento</label>
+                          <input type="date" id="dados-dataNascimento" class="CPF" placeholder="Digite" disabled>
+                        </div>
 
-          </div>
+                    </div>
 
 
-          <div class="grid-pai1">
+                    <div class="grid-pai1">
+                                <div class="grid-modal">
+                                  <label for="" class="email" >E-mail</label>
+                                  <input type="text"id="dados-email"  placeholder="Digite" disabled>
+                                </div>
+                      
+                                <div class="grid-modal">
+                                  <label for="escolha" class="genero">Sexo/Gênero</label>
+                                    <select disabled id="dados-genero" name="escolha" placeholder="Digite">
+                                      <option>Escolha uma opção</option>
+                                      <option value="masculino">Masculino</option>
+                                      <option value="feminino">Feminino</option>
+                                    </select>
+                                      <!--
+                                        <label for="" class="genero">Sexo/Gênero</label>
+                                        <input type="text"  placeholder="Digite">
+
+                                      -->
+                                  
+                                </div>
+                                
+                                
+                                <div class="grid-modal">
+                                      <label for="nacionalidade" class="nacionalidade">Nacionalidade:</label>
+                                      <select disabled id="dados-nacionalidade" name="nacionalidade">
+                                          <option>Escolha uma opção</option>
+                                          <option value="brasil">Brasil</option>
+                                          <option value="argentina">Argentina</option>
+                                          <option value="portugal">Portugal</option>
+                                          <option value="espanha">Espanha</option>
+                                          <option value="estados-unidos">Estados Unidos</option>
+                                          <option value="canada">Canadá</option>
+                                          <option value="outras">Outra</option>
+                                      </select>
+
+                                </div>
+                    </div>  
+
+                    <div class="grid-pai2">
                       <div class="grid-modal">
-                        <label for="" class="email" >E-mail</label>
-                        <input type="text"id="dados-email"  placeholder="Digite" disabled>
+                        <label for="" class="naturalidade">Naturalidade</label>
+                        <input type="text" id="dados-naturalidade" placeholder="Digite" disabled>
                       </div>
-            
-                      <div class="grid-modal">
-                        <label for="escolha" class="genero">Sexo/Gênero</label>
-                          <select disabled id="dados-genero" name="escolha" placeholder="Digite">
-                            <option>Escolha uma opção</option>
-                            <option value="masculino">Masculino</option>
-                            <option value="feminino">Feminino</option>
-                          </select>
-                            <!--
-                              <label for="" class="genero">Sexo/Gênero</label>
-                              <input type="text"  placeholder="Digite">
 
-                            -->
+                      <div class="grid-modal">
+                        <label for="" class="profissao">Profissão</label>
+                        <input type="text" id="dados-profissao"  placeholder="Digite" disabled>
+                      </div>
+
+                      <div class="grid-modal">
                         
+                          <label for="escolha" class="escolaridade">Escolaridade</label>
+                          <select disabled id="dados-escolaridade" name="escolha" placeholder="Digite">
+                              <option>Escolha uma opção</option>
+                              <option value="Ensino-Fundamental">Ensino Fundamental</option>
+                              <option value="Ensino-medio">Ensino Médio</option>
+                              <option value="Gradução">Gradução</option>
+                              <option value="Mestrado">Mestrado</option>
+                                      
+                          </select>
                       </div>
-                      
-                      
+
+                    </div>
+
+                    <div class="grid-pai2">
                       <div class="grid-modal">
-                            <label for="nacionalidade" class="nacionalidade">Nacionalidade:</label>
-                            <select disabled id="dados-nacionalidade" name="nacionalidade">
-                                <option>Escolha uma opção</option>
-                                <option value="brasil">Brasil</option>
-                                <option value="argentina">Argentina</option>
-                                <option value="portugal">Portugal</option>
-                                <option value="espanha">Espanha</option>
-                                <option value="estados-unidos">Estados Unidos</option>
-                                <option value="canada">Canadá</option>
-                                <option value="outras">Outra</option>
-                            </select>
-
+                        
+                          <label for="escolha" class="estado-civil">Estado Civil</label>
+                          <select disabled  id="dados-estadoCivil" name="escolha" placeholder="Digite" >
+                              <option>Escolha uma opção</option>
+                              <option value="solteiro">Solteiro</option>
+                              <option value="casado">Casado</option>
+                              <option value="divorsiado">Divorsiado</option>
+                              <option value="viuvo">Viúvo</option>
+                                      
+                          </select>
                       </div>
-          </div>  
+                            <div class="grid-modal">
+                              <label for="" class="mae">Mãe</label>
+                              <input type="text" id="dados-mae" placeholder="Digite" disabled>
+                            </div>
 
-          <div class="grid-pai2">
-            <div class="grid-modal">
-              <label for="" class="naturalidade">Naturalidade</label>
-              <input type="text" id="dados-naturalidade" placeholder="Digite" disabled>
-            </div>
+                            <div class="grid-modal">
+                              <label for="" class="pai">Pai</label>
+                              <input type="text" id="dados-pai" placeholder="Digite" disabled>
+                            </div>
 
-            <div class="grid-modal">
-              <label for="" class="profissao">Profissão</label>
-              <input type="text" id="dados-profissao"  placeholder="Digite" disabled>
-            </div>
-
-            <div class="grid-modal">
+                      </div> 
               
-                <label for="escolha" class="escolaridade">Escolaridade</label>
-                <select disabled id="dados-escolaridade" name="escolha" placeholder="Digite">
-                    <option>Escolha uma opção</option>
-                    <option value="Ensino-Fundamental">Ensino Fundamental</option>
-                    <option value="Ensino-medio">Ensino Médio</option>
-                    <option value="Gradução">Gradução</option>
-                    <option value="Mestrado">Mestrado</option>
-                            
-                </select>
-            </div>
-
-          </div>
-
-          <div class="grid-pai2">
-            <div class="grid-modal">
-              
-                <label for="escolha" class="estado-civil">Estado Civil</label>
-                <select disabled  id="dados-estadoCivil" name="escolha" placeholder="Digite" >
-                    <option>Escolha uma opção</option>
-                    <option value="solteiro">Solteiro</option>
-                    <option value="casado">Casado</option>
-                    <option value="divorsiado">Divorsiado</option>
-                    <option value="viuvo">Viúvo</option>
-                            
-                </select>
-            </div>
-                  <div class="grid-modal">
-                    <label for="" class="mae">Mãe</label>
-                    <input type="text" id="dados-mae" placeholder="Digite" disabled>
-                  </div>
-
-                  <div class="grid-modal">
-                    <label for="" class="pai">Pai</label>
-                    <input type="text" id="dados-pai" placeholder="Digite" disabled>
-                  </div>
-
-          </div> 
-          
-
+              </form>
         </dialog>
 
         

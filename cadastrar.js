@@ -32,12 +32,16 @@ window.addEventListener('load', () => {
     localStorage.setItem('nome', name)
     localStorage.setItem('username', username)
 
+    
     // Redireciona para a página 'senha.html'
     window.location.href = 'senha.html'
   }
   const prosseguir= document.querySelector('#btn-prosseguirCad')
   prosseguir.addEventListener('click', cadastraNewUser)
   
+  
+
+
 
   const cadastroSenha = async () => {
     if (cadastroEmAndamento) {

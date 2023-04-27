@@ -27,7 +27,6 @@ header img {
 .welcome {
     position: relative;
     display: flex;
-    width: 253px;
     height: 29px;
     gap: 5px;
     padding-top: 29px;
@@ -96,6 +95,10 @@ header img {
     
     
     background: #feffff;
+    background-image: url(/assets/logo\ grande.svg);
+    background-size: 80px;
+    background-repeat: no-repeat;
+    
     border-radius: 16px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     border: none;
@@ -103,7 +106,7 @@ header img {
     font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 15px;
     line-height: 25px;
     
     display: none;
@@ -114,34 +117,39 @@ header img {
 }
 
 .medico {
+    position: absolute;
+    left: 30px;
+    top: 15px;
     color: black;
-    margin-right: 210px;
+    
 }
 
 .email-medico {
+    position: absolute;
+    left: 30px;
+    top: 35px;
     color: black;
-    margin-right: 105px;
-    padding-top: 5px;
-    
-}
-.email-medico:hover {
-    color: #feffff;
-   background: #017849;
     
     
     
 }
+
 #modal-sairPagina img {
     position: absolute;
-    right: 5px;
-    width: 150px;
+    right: 20px;
+    width: 120px;
     height: 120px;
 }
 
 .sair-geral a {
+    position: absolute;
+    left: 50px;
+    top: 105px;
+
+    
     color: #000000;
     text-decoration: none;
-    margin-right: 199px;
+    
 }
 
 .sair-geral a:hover {
@@ -153,6 +161,10 @@ header img {
 }
 
 .sair-geral i{
+    position: absolute;
+    
+    left: 35px;
+    top: 75px;
     transform: rotate(90deg);
     margin-top: 35px;
     
