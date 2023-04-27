@@ -90,22 +90,33 @@ const dadoSessao = async () =>  {
 
     newdados.forEach(news => {
         
-        conteudo += `<div class="cardSessao">
-       
-                    
-        <img class="img1" src="/assets/logo sessão.svg" alt="">
-      
+        conteudo += `
+        <img class="BarraVerde" src="/assets/barra verde.svg" alt="">
+
+        <div class="cardSessao">
+            <div class="corAzul">
+                
+
+        </div>
+            
+            <img class="img1" src="/assets/logo sessão.svg" alt="">
+            
+                <h4>Sessão 01</h4>
+                <button id="opcoes"><img src="/assets/3 pontos.svg"alt=""></button>
+
+            
+            
+            <p class="date-sessao" id="date-sessao">${news.data}</p>
+            <p class="textInfo-sessao" id="textInfo-sessao">${news.resumo}</p>
+        </div>
+
         
-            <h4>Sessão 01</h4>
-            <button id="opcoes"><img src="/assets/3 pontos.svg"alt=""></button>
-        
-        <p class="date-sessao" id="date-sessao">${news.data}</p>
-        
-        <p class="textInfo-sessao" id="textInfo-sessao">${news.resumo}</p>
-    </div>`
+    `
         
     })
     postSessao.innerHTML = conteudo
+    console.log(conteudo)
+    
 }
 
 window.addEventListener('DOMContentLoaded' , dadoSessao)
@@ -136,6 +147,7 @@ const dadosfatoRelevante = async () =>  {
         
     })
     postfato.innerHTML = conteudo
+    console.log(conteudo)
 }
 
 window.addEventListener('DOMContentLoaded' , dadosfatoRelevante)

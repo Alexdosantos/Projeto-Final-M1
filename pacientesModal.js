@@ -87,7 +87,7 @@ openModalSair.onclick = function () {
     modalSair.style.display = 'flex'
   } else {
     modalSair.style.display = 'none'
-  }
+ }
 };
 function fecharAgora() {
   modalSair.style.display = 'none'

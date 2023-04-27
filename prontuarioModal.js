@@ -47,3 +47,20 @@ BtnFiltraTodos.onclick = function () {
     }
 }
   
+
+
+const openModalSair = document.querySelector('#btn-sairProntuario')
+const modalSair = document.querySelector('#modal-sairPagina')
+
+
+openModalSair.onclick = function () {
+  if(modalSair.style.display === "none") {
+    modalSair.style.display = 'flex'
+  } else {
+    modalSair.style.display = 'none'
+ }
+};
+function fecharAgora() {
+  modalSair.style.display = 'none'
+};
+modalFechar.onclick = fecharAgora
