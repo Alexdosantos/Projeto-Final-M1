@@ -138,12 +138,21 @@
     width: 32px;
     height: 32px;
     border-radius: 50px 50px 50px 50px;
+    padding-left: 10;
   
     
     background-color: #00995D;
 
 }
+.dadosGerais p img{
 
+    padding: 9px 0px 0px 12px;
+}
+
+.dadosGerais1 p img {
+
+    padding: 9px 0px 0px 11px;
+}
 .dadosGerais1 h5 {
     font-family: 'Montserrat';
     font-style: normal;

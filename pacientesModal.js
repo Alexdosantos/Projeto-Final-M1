@@ -1,5 +1,3 @@
-//AQUI É O MODAL DO BUTTON NOVO PACIENTE
-
 const openModal = document.querySelector('.btn-cad')
 const modal = document.querySelector('.modal-new-Paciente')
 const closeModal = document.querySelector('.close-modal')

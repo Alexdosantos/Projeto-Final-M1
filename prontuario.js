@@ -93,12 +93,12 @@ const dadoSessao = async () =>  {
         conteudo += `
         <img class="BarraVerde" src="/assets/barra verde.svg" alt="">
 
-        <div class="cardSessao">
-            <div class="corAzul">
+        <div onclick="abrirSessaoValore(${news.id})" class="cardSessao">
+            <div class="corAzul"></div> 
                 
 
-        </div>
             
+           
             <img class="img1" src="/assets/logo sessão.svg" alt="">
             
                 <h4>Sessão 01</h4>
@@ -115,7 +115,7 @@ const dadoSessao = async () =>  {
         
     })
     postSessao.innerHTML = conteudo
-    console.log(conteudo)
+    
     
 }
 
@@ -153,4 +153,8 @@ const dadosfatoRelevante = async () =>  {
 window.addEventListener('DOMContentLoaded' , dadosfatoRelevante)
   
 
-  
+function abrirSessaoValore(id) {
+  window.location.href = `sessao.html?id=${id}`
+
+}
+

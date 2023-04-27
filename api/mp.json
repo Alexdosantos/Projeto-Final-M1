@@ -91,8 +91,16 @@
       "resumo": "Teste 2",
       "idPaciente": 6,
       "id": 1
+    },
+    {
+      "data": "1561-05-06",
+      "horaInicio": "06:56",
+      "horaFinal": "06:46",
+      "titulo": "64516541651",
+      "resumo": "561265415615156",
+      "idPaciente": 2,
+      "id": 2
     }
-    
   ],
   "fatoRelevante": [
     {
@@ -101,7 +109,13 @@
       "descricao": "Teste",
       "idPaciente": 6,
       "id": 1
+    },
+    {
+      "data": "",
+      "titulo": "",
+      "descricao": "",
+      "idPaciente": 2,
+      "id": 2
     }
-    
   ]
 }
