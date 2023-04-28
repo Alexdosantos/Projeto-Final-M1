@@ -193,7 +193,7 @@ await miModal.showModal();
   
 });
 
-closemiModal.addEventListener('click', () => {
+closemiModal.addEventListener('Submit', () => {
      
    saveCadastro()
 });
