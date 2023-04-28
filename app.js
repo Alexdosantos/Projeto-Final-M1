@@ -183,20 +183,21 @@ const saveCadastro = async () =>  {
 // AQUI É A LÓGICA DO MINI MODAL DE NOVO CADASTRO COM SUCESSO 
 const closemiModal = document.querySelector('#btn-fecharSucesso');
 const miModal = document.querySelector('#card-sucesso');
-const BtnSalvarCadastro = document.querySelector('#criar-newPaciente')
+const BtnSalvarCadastro = document.querySelector('#criar-newPaciente');
 
+async function sucesso() {
+  await miModal.close();
+}
 
 BtnSalvarCadastro.addEventListener('click', async () => {
-  
-await miModal.showModal(); 
- setTimeout(sucesso , 5000);
-  
+  miModal.showModal(); 
+  setTimeout(sucesso , 5000);  
 });
 
-closemiModal.addEventListener('Submit', () => {
-     
-   saveCadastro()
+closemiModal.addEventListener('click', () => {
+  saveCadastro(); // aqui você precisa definir o que a função saveCadastro() faz
 });
+
 
 
 
