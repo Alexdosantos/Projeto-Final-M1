@@ -48,6 +48,13 @@
       "password": "123456",
       "password1": "123456",
       "id": 49
+    },
+    {
+      "nome": "Franssinete santos",
+      "username": "franssinete@yahoo.com",
+      "password": "12345",
+      "password1": "12345",
+      "id": 50
     }
   ],
   "Cadastro-Pacientes": [
@@ -80,27 +87,33 @@
       "mae": "Maria",
       "pai": "Gerson",
       "id": 2
+    },
+    {
+      "cpf": "2156456454",
+      "nome": "Franssinete santos",
+      "dataNascimento": "1966-09-09",
+      "email": "franssinete@yahoo.com",
+      "genero": "feminino",
+      "nacionalidade": "portugal",
+      "naturalidade": "São Paulo",
+      "profissao": "Programadora",
+      "ensino": "Mestrado",
+      "estadoCivil": "solteiro",
+      "mae": "Maria",
+      "pai": "Antonio",
+      "id": 3
     }
   ],
   "sessoesPaciente": [
     {
-      "data": "2023-05-10",
-      "horaInicio": "12:00",
-      "horaFinal": "02:02",
-      "titulo": "Teste dois",
-      "resumo": "teste",
-      "idPaciente": 1,
+      "data": "",
+      "horaInicio": "",
+      "horaFinal": "",
+      "titulo": "",
+      "resumo": "",
+      "idPaciente": 3,
       "id": 1
     }
   ],
-  "fatoRelevante": [
-    
-    {
-      "data": "",
-      "titulo": "",
-      "descricao": "hrethreherhertherth\nherthertherthw46ujw5jw5yhe\n5herherjetyjetyje\nt",
-      "idPaciente": 1,
-      "id": 6
-    }
-  ]
+  "fatoRelevante": []
 }

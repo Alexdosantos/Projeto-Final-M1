@@ -277,7 +277,7 @@
     margin-left: 37.5rem;
     margin-right: 11rem;
     margin-top: 100px;
-    top: -375px;
+    bottom: 380px;
     
     
     box-sizing: border-box;
@@ -296,7 +296,7 @@
 
 .barraVerde{
     position: absolute;
-    bottom: 170px;
+    bottom: 120px;
     width: 48px;
     height: 45px;
     left: 33px;
@@ -533,8 +533,8 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    right: 299px;
-    top: 370px;
+    right: 159px;
+    top: 420px;
 
     width: 140px;
     height: 80px;
