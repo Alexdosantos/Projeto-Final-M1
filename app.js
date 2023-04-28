@@ -125,7 +125,7 @@ const updatePost = async (updatedPost, id) => {
 
 
 const cadastro = async (cad) =>{
-  await fetch ("http://localhost:3000/cadastro-pacientes" , {
+  await fetch ("https://projeto-final-arnia.onrender.com/cadastro-pacientes" , {
       method: "POST",
       headers: {
           'Accept': 'application/json, text/plain, /',
@@ -204,7 +204,7 @@ closemiModal.addEventListener('click', () => {
 
 const deletarCadastro = async (id) => {
   console.log(deletarCadastro)
-  await fetch (`http://localhost:3000/cadastro-pacientes/${id}` ,{
+  await fetch (`https://projeto-final-arnia.onrender.com/cadastro-pacientes/${id}` ,{
       method: 'DELETE'
   })
   getPosts()
@@ -219,7 +219,7 @@ document.querySelector('#excluir').addEventListener('click', deletarCadastro)
 
 const editarCadastro = async (id) => {
  editarId = id 
- const apiResponse = await  fetch (`http://localhost:3000/cadastro-pacientes/${id}`)
+ const apiResponse = await  fetch (`https://projeto-final-arnia.onrender.com/cadastro-pacientes/${id}`)
  const posts = await apiResponse.json()
 
     document.querySelector('#edit-cpf').value = posts.cpf
@@ -296,7 +296,7 @@ function abrirProntuario (id)  {
 
  const dadosPaciente = async (id) => {
   editarId = id 
-  const apiResponse = await  fetch (`http://localhost:3000/cadastro-pacientes/${id}`)
+  const apiResponse = await  fetch (`https://projeto-final-arnia.onrender.com/cadastro-pacientes/${id}`)
   const posts = await apiResponse.json()
  
      document.querySelector('#dados-cpf').value = posts.cpf

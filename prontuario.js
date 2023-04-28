@@ -6,7 +6,7 @@ const id = parametros.get('id');
 // carregar dados do paciente com o ID especificado
 async function carregarDadosPaciente() {
   try {
-    const api = await fetch(`http://localhost:3000/cadastro-pacientes/${id}`);
+    const api = await fetch(`https://projeto-final-arnia.onrender.com/cadastro-pacientes/${id}`);
     const paciente = await api.json();
 
     const nome = paciente.nome;
@@ -30,7 +30,7 @@ carregarDadosPaciente();
 //  AQUI REALIZA O MÉTODO DE POST PARA SALVAR OS DADOS DA SESSÃO
 const salveSessao = async () => {
     try {
-      const api = await fetch('http://localhost:3000/sessoesPaciente', {
+      const api = await fetch('https://projeto-final-arnia.onrender.com/sessoesPaciente', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -56,7 +56,7 @@ const salveSessao = async () => {
 // AQUI REALIZA O MÁTODO POST PARA SALVA OS DADOS EM FOTO RELEVANTE
   const salveFatoRelenate = async () => {
     try {
-      const api = await fetch('http://localhost:3000/fatoRelevante', {
+      const api = await fetch('https://projeto-final-arnia.onrender.com/fatoRelevante', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -83,7 +83,7 @@ const salveSessao = async () => {
 
 const dadoSessao = async () =>  {
     const postSessao = document.querySelector('#cardsessaonew')
-    const apiSessao = await fetch (`http://localhost:3000/sessoesPaciente?idPaciente=${id}`)
+    const apiSessao = await fetch (`https://projeto-final-arnia.onrender.com/sessoesPaciente?idPaciente=${id}`)
     const newdados =  await apiSessao.json()
     let conteudo = ''
     
@@ -127,7 +127,7 @@ window.addEventListener('DOMContentLoaded' , dadoSessao)
 const dadosfatoRelevante = async () =>  {
    
     const postfato = document.querySelector('#section-fatoRelevante')
-    const apifato = await fetch (`http://localhost:3000/fatoRelevante?idPaciente=${id}`)
+    const apifato = await fetch (`https://projeto-final-arnia.onrender.com/fatoRelevante?idPaciente=${id}`)
     const newfato =  await apifato.json()
     let conteudo = ''
 

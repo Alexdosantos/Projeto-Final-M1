@@ -2,7 +2,7 @@
 // AQUI REALIZEI O GET PARA PUXAR O USÚARIO E SENHA , E VERIFICAR SE OS DADOS QUE O USÚARIO É COMPATIVÉL
 
 const login = async (username , password) => {
-    const resposta = await fetch (`http://localhost:3000/usuarios?username=${username}&password=${password}`)
+    const resposta = await fetch (`https://projeto-final-arnia.onrender.com/usuarios?username=${username}&password=${password}`)
 
     if(resposta.ok) {
         const data = await resposta.json()
@@ -39,7 +39,7 @@ document.querySelector('#btn-entrar').addEventListener('click', loginUsuario);
 
 
 
-const apiUrl = 'http://localhost:3000/usuarios';
+const apiUrl = 'https://projeto-final-arnia.onrender.com/usuarios';
 
 const cadNewUsuario = async (username, password) => {
   try {
