@@ -58,8 +58,8 @@
     background: transparent;
     
     border: none;
-
     cursor: pointer;
+    outline: none;
 
 }
 
@@ -302,4 +302,11 @@
     background-color:#BDBDBD ;
 }
 
-
+#editBlue {
+    position: absolute;
+    left: 308px;
+    top: 63px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
