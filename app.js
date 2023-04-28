@@ -10,7 +10,7 @@ document.querySelector('.email-medico').innerHTML = emailLogin
 
 const getPosts = async () => {
   const postagem = document.querySelector('#content')
-  const apiResponse = await fetch("http://localhost:3000/cadastro-pacientes")
+  const apiResponse = await fetch("https://projeto-final-arnia.onrender.com/cadastro-pacientes")
   const posts = await apiResponse.json()
   console.log(posts)
   let conteudo = ''
@@ -53,7 +53,7 @@ window.addEventListener('DOMContentLoaded', getPosts)
 // fILTRA PACIENTES 
 
 const filtrarPacientes = async (nome) => {
-  const apiResponse = await fetch(`http://localhost:3000/cadastro-pacientes?nome_like=${nome}`)
+  const apiResponse = await fetch(`https://projeto-final-arnia.onrender.com/cadastro-pacientes?nome_like=${nome}`)
   const pacientes = await apiResponse.json()
   return pacientes
 }
@@ -112,7 +112,7 @@ document.querySelector('#input-btn').addEventListener('input', async () => {
 
 
 const updatePost = async (updatedPost, id) => {
-  await fetch(`http://localhost:3000/cadastro-pacientes/${id}`, {
+  await fetch(`https://projeto-final-arnia.onrender.com/cadastro-pacientes/${id}`, {
     method: 'PUT',
     headers: {
       'Accept': 'application/json, text/plain, /',
