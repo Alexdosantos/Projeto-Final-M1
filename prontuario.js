@@ -6,7 +6,7 @@ const id = parametros.get('id');
 // carregar dados do paciente com o ID especificado
 async function carregarDadosPaciente() {
   try {
-    const api = await fetch(`https://projeto-final-arnia.onrender.com/cadastro-pacientes`);
+    const api = await fetch(`https://projeto-final-arnia.onrender.com/cadastro-pacientes/${id}`);
     const paciente = await api.json();
 
     const nome = paciente.nome;
