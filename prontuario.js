@@ -22,6 +22,7 @@ async function carregarDadosPaciente() {
   } catch (error) {
     console.log(error);
   }    
+  location.reload()
 }
 
 carregarDadosPaciente();
