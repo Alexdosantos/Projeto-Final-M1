@@ -120,7 +120,7 @@ const dadoSessao = async () =>  {
         
     })
     postSessao.innerHTML = conteudo
-    window.location.href = `prontuario.html?id=${id}`
+    //window.location.href = `prontuario.html?id=${id}`
     
     
     
@@ -155,7 +155,7 @@ const dadosfatoRelevante = async () =>  {
     })
     postfato.innerHTML = conteudo
     
-    window.location.href = `prontuario.html?id=${id}`
+    //window.location.href = `prontuario.html?id=${id}`
 }
 
 window.addEventListener('DOMContentLoaded' , dadosfatoRelevante)
