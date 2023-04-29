@@ -51,6 +51,7 @@ const salveSessao = async (event) => {
   } catch (error) {
     console.log(error);
   }
+  location.reload()
 };
   
   document.querySelector('#btn-criarNovasessao').addEventListener('click', salveSessao);
