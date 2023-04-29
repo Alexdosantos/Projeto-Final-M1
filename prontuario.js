@@ -22,6 +22,7 @@ async function carregarDadosPaciente() {
   } catch (error) {
     console.log(error);
   }    
+  location.reload()
   
 }
 
@@ -154,6 +155,7 @@ const dadosfatoRelevante = async () =>  {
         
     })
     postfato.innerHTML = conteudo
+
     
     //window.location.href = `prontuario.html?id=${id}`
 }
