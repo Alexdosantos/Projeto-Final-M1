@@ -28,30 +28,30 @@ async function carregarDadosPaciente() {
 carregarDadosPaciente();
 
 
-//  AQUI REALIZA O MÉTODO DE POST PARA SALVAR OS DADOS DA SESSÃO
-const salveSessao = async () => {
-    try {
-      const api = await fetch('https://projeto-final-arnia.onrender.com/sessoesPaciente', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          data: document.querySelector('#data-newSessao').value,
-          horaInicio: document.querySelector('#time-InicioSessao').value,
-          horaFinal: document.querySelector('#time-FimSessao').value,
-          titulo: document.querySelector('#titulo-input').value,
-          resumo: document.querySelector('#tituloTextModal').value,
-          idPaciente: parseInt(id)
-        })
-      });
-      const response = await api.json();
-      console.log(response);
-    } catch (error) {
-      console.log(error);
-    }
-    
-  };
+// AQUI REALIZA O MÉTODO DE POST PARA SALVAR OS DADOS DA SESSÃO
+const salveSessao = async (event) => {
+  event.preventDefault(); // adicionando preventDefault() para não carregar a página novamente após envio dos dados
+  try {
+    const api = await fetch('https://projeto-final-arnia.onrender.com/sessoesPaciente', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        data: document.querySelector('#data-newSessao').value,
+        horaInicio: document.querySelector('#time-InicioSessao').value,
+        horaFinal: document.querySelector('#time-FimSessao').value,
+        titulo: document.querySelector('#titulo-input').value,
+        resumo: document.querySelector('#tituloTextModal').value,
+        idPaciente: parseInt(id)
+      })
+    });
+    const response = await api.json();
+    console.log(response);
+  } catch (error) {
+    console.log(error);
+  }
+};
   
   document.querySelector('#btn-criarNovasessao').addEventListener('click', salveSessao);
   
