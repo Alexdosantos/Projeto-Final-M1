@@ -1,7 +1,10 @@
-// obter o parâmetro "id" da URL
 const parametrosUrl = window.location.search;
 const parametros = new URLSearchParams(parametrosUrl);
 const id = parametros.get('id');
+
+if (!id) {
+  console.error('ID não encontrado na URL');
+}
 
 // carregar dados do paciente com o ID especificado
 async function carregarDadosPaciente() {
@@ -27,6 +30,9 @@ async function carregarDadosPaciente() {
 carregarDadosPaciente();
 
 
+let pacienteId = id; // armazenar o ID em uma variável
+
+
 //  AQUI REALIZA O MÉTODO DE POST PARA SALVAR OS DADOS DA SESSÃO
 const salveSessao = async () => {
     try {
@@ -41,7 +47,7 @@ const salveSessao = async () => {
           horaFinal: document.querySelector('#time-FimSessao').value,
           titulo: document.querySelector('#titulo-input').value,
           resumo: document.querySelector('#tituloTextModal').value,
-          idPaciente: parseInt(id)
+          idPaciente: parseInt(pacienteId) // usar a variável para enviar o ID
         })
       });
       const response = await api.json();
@@ -53,7 +59,7 @@ const salveSessao = async () => {
   
   document.querySelector('#btn-criarNovasessao').addEventListener('click', salveSessao);
   
-// AQUI REALIZA O MÁTODO POST PARA SALVA OS DADOS EM FOTO RELEVANTE
+// AQUI REALIZA O MÉTODO POST PARA SALVAR OS DADOS EM FATO RELEVANTE
   const salveFatoRelenate = async () => {
     try {
       const api = await fetch('https://projeto-final-arnia.onrender.com/fatoRelevante', {
@@ -65,100 +71,12 @@ const salveSessao = async () => {
           data: document.querySelector('#dataFato').value,
           titulo: document.querySelector('#tituloFato').value,
           descricao: document.querySelector('#tituloFatoModal').value,
-          idPaciente: parseInt(id)
+          idPaciente: parseInt(pacienteId) // usar a variável para enviar o ID
         })
       });
       const response = await api.json();
       console.log(response);
-    } catch (error) {
-      console.log(error);
+    } catch {
+
     }
-  };
-  
-  document.querySelector('#btn-criarFatoRelevante').addEventListener('click', salveFatoRelenate);
-
-
-
-
-
-const dadoSessao = async () =>  {
-    const postSessao = document.querySelector('#cardsessaonew')
-    const apiSessao = await fetch (` https://projeto-final-arnia.onrender.com/sessoesPaciente?idPaciente=${id}`)
-    const newdados =  await apiSessao.json()
-    let conteudo = ''
-    
-
-    newdados.forEach(news => {
-        
-        conteudo += `
-        <section id="section-cardSessao">
-        <img class="barraVerde" src="/assets/barra verde.svg" alt="">
-            <div> 
-                
-
-                <div class="cardSessao">
-                    <div class="corverde"></div>
-                    
-                    <img class="img1" src="/assets/logo sessão.svg" alt="">
-                    
-                        <h4>Sessão 01</h4>
-                        <button id="opcoes"><img src="/assets/3 pontos.svg"alt=""></button>
-
-                    
-                    
-                    <p class="date-sessao" id="date-sessao">${news.data}</p>
-                    <p class="textInfo-sessao" id="textInfo-sessao">${news.resumo}</p>
-                </div>
-            </div>
-            </section>
-
-        
-    `
-        
-    })
-    postSessao.innerHTML = conteudo
-    location.reload()
-    
-    
-}
-
-//window.addEventListener('DOMContentLoaded' , dadoSessao)
-
-
-const dadosfatoRelevante = async () =>  {
-   
-    const postfato = document.querySelector('#section-fatoRelevante')
-    const apifato = await fetch (` https://projeto-final-arnia.onrender.com/fatoRelevante?idPaciente=${id}`)
-    const newfato =  await apifato.json()
-    let conteudo = ''
-
-    newfato.forEach(news => {
-        conteudo += `<img class="retanguloAzul" src="/assets/Rectangle azul.svg" alt="">
-        
-                
-                
-        <div class="cardfatoRelevante">
-            <img class="img-fatorelevante" src="/assets/logo fato relevante.svg" alt="">
-            
-            <h4>Fato Relevante</h4>
-            <button id="opcoes1"><img src="/assets/3 pontos.svg"alt=""></button>
-            
-            
-            <p class="dateFatorelevante">${news.data}</p>
-            <p class="textInfo-FatoRelefante">${news.descricao}</p>
-        </div>`
-        
-    })
-    postfato.innerHTML = conteudo
-    location.reload()
-
-}
-
-//window.addEventListener('DOMContentLoaded' , dadosfatoRelevante)
-  
-
-function abrirSessaoValore(id) {
-  window.location.href = `sessao.html?id=${id}`
-
-}
-
+  }
