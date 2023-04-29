@@ -117,6 +117,7 @@ const dadoSessao = async () =>  {
         
     })
     postSessao.innerHTML = conteudo
+    location.reload()
     
     
 }
@@ -149,7 +150,8 @@ const dadosfatoRelevante = async () =>  {
         
     })
     postfato.innerHTML = conteudo
-    console.log(conteudo)
+    location.reload()
+
 }
 
 //window.addEventListener('DOMContentLoaded' , dadosfatoRelevante)
