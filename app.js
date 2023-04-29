@@ -48,7 +48,7 @@ const getPosts = async () => {
   `
 }
 
-window.addEventListener('DOMContentLoaded', getPosts)
+//window.addEventListener('DOMContentLoaded', getPosts)
 
 // fILTRA PACIENTES 
 
