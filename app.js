@@ -173,31 +173,34 @@ const saveCadastro = async () =>  {
  
 
   await cadastro(post)
-
+}
   
 
-}
+
 const BtnSalvarCadastro = document.querySelector('#criar-newPaciente')
 BtnSalvarCadastro.addEventListener('click', saveCadastro )
 
 // AQUI É A LÓGICA DO MINI MODAL DE NOVO CADASTRO COM SUCESSO 
-//const closemiModal = document.querySelector('#btn-fecharSucesso');
-//const miModal = document.querySelector('#card-sucesso');
+const closemiModal = document.querySelector('#btn-fecharSucesso');
+const miModal = document.querySelector('#card-sucesso');
 //const BtnSalvarCadastro = document.querySelector('#criar-newPaciente');
 
-//async function sucesso() {
- // await miModal.close();
-//}
+async function sucesso() {
+  await miModal.close();
+  
+}
 
-//BtnSalvarCadastro.addEventListener('click', async () => {
- // miModal.showModal(); 
- // setTimeout(sucesso , 5000);  
-//});
+closemiModal.addEventListener('click', async () => {
+  miModal.showModal(); 
+  setTimeout(sucesso() , 5000 ); 
+  
+});
 
 //closemiModal.addEventListener('click', () => {
-  //saveCadastro(); // aqui você precisa definir o que a função saveCadastro() faz
+ // saveCadastro(); // aqui você precisa definir o que a função saveCadastro() faz
 //});
 //document.querySelector('#btn-fecharSucesso').addEventListener('click', saveCadastro)
+
 
 
 
@@ -324,5 +327,4 @@ function abrirProntuario (id)  {
  console.log(dadosPaciente)
 
 
-  
- 
+

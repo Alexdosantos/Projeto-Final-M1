@@ -99,7 +99,7 @@ openModalSair.onclick = function () {
 function fecharAgora() {
   modalSair.style.display = 'none'
 };
-modalFechar.onclick = fecharAgora
+
 
 
 

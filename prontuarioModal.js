@@ -1,4 +1,4 @@
-const openModalProntuario = document.querySelector('#sessao-pronturario')
+const openModalProntuario = document.querySelector('#sessaopronturario')
 const modalProntuario = document.querySelector('#modal-prontuario')
 const closeProntuario = document.querySelector('#btn-closeModal-Prontuario')
 const cancelarProntuario = document.querySelector('#btn-criarNovasessao')

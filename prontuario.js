@@ -83,7 +83,7 @@ const salveSessao = async () => {
 
 const dadoSessao = async () =>  {
     const postSessao = document.querySelector('#cardsessaonew')
-    const apiSessao = await fetch (`https://projeto-final-arnia.onrender.com/sessoesPaciente?idPaciente=${id}`)
+    const apiSessao = await fetch (` https://projeto-final-arnia.onrender.com/sessoesPaciente?idPaciente=${id}`)
     const newdados =  await apiSessao.json()
     let conteudo = ''
     
@@ -127,7 +127,7 @@ window.addEventListener('DOMContentLoaded' , dadoSessao)
 const dadosfatoRelevante = async () =>  {
    
     const postfato = document.querySelector('#section-fatoRelevante')
-    const apifato = await fetch (`https://projeto-final-arnia.onrender.com/fatoRelevante?idPaciente=${id}`)
+    const apifato = await fetch (` https://projeto-final-arnia.onrender.com/fatoRelevante?idPaciente=${id}`)
     const newfato =  await apifato.json()
     let conteudo = ''
 

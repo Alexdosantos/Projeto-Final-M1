@@ -83,7 +83,7 @@ window.addEventListener('load', () => {
     const cadastrarSenha = document.querySelector('#btn-cadastrarSenha')
     cadastrarSenha.addEventListener('click', cadastroSenha)
   
-    // Remove this block of code since it's duplicated
+    
     // cadastroSenha.onclick = function() {
     //   modalSucesso.showModal()        
     // }
