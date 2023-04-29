@@ -178,7 +178,7 @@ const saveCadastro = async () =>  {
 
 }
 const BtnSalvarCadastro = document.querySelector('#criar-newPaciente')
-BtnSalvarCadastro.addEventListener('submit', saveCadastro )
+BtnSalvarCadastro.addEventListener('click', saveCadastro )
 
 // AQUI É A LÓGICA DO MINI MODAL DE NOVO CADASTRO COM SUCESSO 
 //const closemiModal = document.querySelector('#btn-fecharSucesso');
