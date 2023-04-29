@@ -22,7 +22,7 @@ async function carregarDadosPaciente() {
   } catch (error) {
     console.log(error);
   }    
-  window.location.href = `prontuario.html?id=${id}`
+  
 }
 
 carregarDadosPaciente();
@@ -50,7 +50,7 @@ const salveSessao = async () => {
     } catch (error) {
       console.log(error);
     }
-    window.location.href = `prontuario.html?id=${id}`
+    
   };
   
   document.querySelector('#btn-criarNovasessao').addEventListener('click', salveSessao);
