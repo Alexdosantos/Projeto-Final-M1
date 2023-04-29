@@ -50,7 +50,7 @@ const salveSessao = async () => {
     } catch (error) {
       console.log(error);
     }
-    //window.location.href = `prontuario.html?id=${id}`
+    window.location.href = `prontuario.html?id=${id}`
   };
   
   document.querySelector('#btn-criarNovasessao').addEventListener('click', salveSessao);
@@ -75,7 +75,7 @@ const salveSessao = async () => {
     } catch (error) {
       console.log(error);
     }
-    //window.location.href = `prontuario.html?id=${id}`
+    window.location.href = `prontuario.html?id=${id}`
   };
   
   document.querySelector('#btn-criarFatoRelevante').addEventListener('click', salveFatoRelenate);
@@ -155,7 +155,7 @@ const dadosfatoRelevante = async () =>  {
     })
     postfato.innerHTML = conteudo
     
-    //window.location.href = `prontuario.html?id=${id}`
+    window.location.href = `prontuario.html?id=${id}`
 }
 
 window.addEventListener('DOMContentLoaded' , dadosfatoRelevante)
