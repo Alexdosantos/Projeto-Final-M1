@@ -174,6 +174,7 @@ const saveCadastro = async () =>  {
  
 
   await cadastro(post)
+  location.reload()
 }
   
 
