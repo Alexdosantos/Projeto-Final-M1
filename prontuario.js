@@ -51,7 +51,7 @@ const salveSessao = async () => {
     }
   };
   
-  document.querySelector('#btn-criarNovasessao').addEventListener('submit', salveSessao);
+  document.querySelector('#btn-criarNovasessao').addEventListener('click', salveSessao);
   
 // AQUI REALIZA O MÁTODO POST PARA SALVA OS DADOS EM FOTO RELEVANTE
   const salveFatoRelenate = async () => {
@@ -75,7 +75,7 @@ const salveSessao = async () => {
     }
   };
   
-  document.querySelector('#btn-criarFatoRelevante').addEventListener('submit', salveFatoRelenate);
+  document.querySelector('#btn-criarFatoRelevante').addEventListener('click', salveFatoRelenate);
 
 
 
