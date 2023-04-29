@@ -50,7 +50,7 @@ const salveSessao = async () => {
     } catch (error) {
       console.log(error);
     }
-    location.reload()
+    
   };
   
   document.querySelector('#btn-criarNovasessao').addEventListener('click', salveSessao);
@@ -75,7 +75,7 @@ const salveSessao = async () => {
     } catch (error) {
       console.log(error);
     }
-    location.reload()
+    
   };
   
   document.querySelector('#btn-criarFatoRelevante').addEventListener('click', salveFatoRelenate);
@@ -120,6 +120,7 @@ const dadoSessao = async () =>  {
         
     })
     postSessao.innerHTML = conteudo
+    window.location.href = `prontuario.html?id=${id}`
     
     
     
@@ -154,7 +155,7 @@ const dadosfatoRelevante = async () =>  {
     })
     postfato.innerHTML = conteudo
     
-
+    window.location.href = `prontuario.html?id=${id}`
 }
 
 window.addEventListener('DOMContentLoaded' , dadosfatoRelevante)
