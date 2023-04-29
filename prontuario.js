@@ -126,7 +126,7 @@ const dadoSessao = async () =>  {
     
 }
 
-window.addEventListener('DOMContentLoaded' , dadoSessao)
+//window.addEventListener('DOMContentLoaded' , dadoSessao)
 
 
 const dadosfatoRelevante = async () =>  {
@@ -158,7 +158,7 @@ const dadosfatoRelevante = async () =>  {
     window.location.href = `prontuario.html?id=${id}`
 }
 
-window.addEventListener('DOMContentLoaded' , dadosfatoRelevante)
+//window.addEventListener('DOMContentLoaded' , dadosfatoRelevante)
   
 
 function abrirSessaoValore(id) {
