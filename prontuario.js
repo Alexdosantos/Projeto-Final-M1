@@ -77,6 +77,7 @@ const salveSessao = async () => {
     } catch (error) {
       console.log(error);
     }
+    location.reload()
     //window.location.href = `prontuario.html?id=${id}`
   };
   
