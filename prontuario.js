@@ -103,7 +103,7 @@ const dadoSessao = async () =>  {
             <div> 
                 
 
-                <div class="cardSessao">
+                <div onclick ="abrirSessaoValore(${news.id})" class="cardSessao">
                     <div class="corverde"></div>
                     
                     <img class="img1" src="/assets/logo sessão.svg" alt="">
