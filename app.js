@@ -179,6 +179,28 @@ const saveCadastro = async () =>  {
   
 document.querySelector('#criar-newPaciente').addEventListener('click', saveCadastro )
 
+const BtnSalvarCadastro = document.querySelector('#criar-newPaciente')
+BtnSalvarCadastro.addEventListener('click', saveCadastro )
+
+
+const closemiModal = document.querySelector('#btn-fecharSucesso')
+ const miModal = document.querySelector('#card-sucesso')
+ //const BtnSalvarCadastro = document.querySelector('#criar-newPaciente');
+ 
+ async function sucesso() {
+   await miModal.close();
+ }
+ 
+ BtnSalvarCadastro.addEventListener('click', async () => {
+   miModal.showModal(); 
+   setTimeout(sucesso , 6000);  
+ });
+ 
+ closemiModal.addEventListener('click', () => {
+   saveCadastro(); // aqui você precisa definir o que a função saveCadastro() faz
+ });
+
+
 
 //AQUI É A PARTE DE DELETAR
 
@@ -300,22 +322,7 @@ function abrirProntuario (id)  {
     
      
  }
- const closemiModal = document.querySelector('#btn-fecharSucesso')
- const miModal = document.querySelector('#card-sucesso')
- //const BtnSalvarCadastro = document.querySelector('#criar-newPaciente');
  
- async function sucesso() {
-   await miModal.close();
- }
- 
- BtnSalvarCadastro.addEventListener('click', async () => {
-   miModal.showModal(); 
-   setTimeout(sucesso , 6000);  
- });
- 
- closemiModal.addEventListener('click', () => {
-   saveCadastro(); // aqui você precisa definir o que a função saveCadastro() faz
- });
  
 
 
