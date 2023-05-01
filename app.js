@@ -10,7 +10,7 @@ document.querySelector('.email-medico').innerHTML = emailLogin
 
 const getPosts = async () => {
   const postagem = document.querySelector('#content')
-  const apiResponse = await fetch("https://projeto-final-arnia.onrender.com/cadastro-pacientes")
+  const apiResponse = await fetch("http://localhost:3000/cadastro-pacientes")
   const posts = await apiResponse.json()
   console.log(posts)
   let conteudo = ''
@@ -54,7 +54,7 @@ window.addEventListener('DOMContentLoaded', getPosts)
 // fILTRA PACIENTES 
 
 const filtrarPacientes = async (nome) => {
-  const apiResponse = await fetch(`https://projeto-final-arnia.onrender.com/cadastro-pacientes?nome_like=${nome}`)
+  const apiResponse = await fetch(`http://localhost:3000/cadastro-pacientes?nome_like=${nome}`)
   const pacientes = await apiResponse.json()
   return pacientes
 }
@@ -113,7 +113,7 @@ document.querySelector('#input-btn').addEventListener('input', async () => {
 
 
 const updatePost = async (updatedPost, id) => {
-  await fetch(`https://projeto-final-arnia.onrender.com/cadastro-pacientes/${id}`, {
+  await fetch(`http://localhost:3000/cadastro-pacientes/${id}`, {
     method: 'PUT',
     headers: {
       'Accept': 'application/json, text/plain, /',
@@ -126,7 +126,7 @@ const updatePost = async (updatedPost, id) => {
 
 
 const cadastro = async (cad) =>{
-  await fetch ("https://projeto-final-arnia.onrender.com/cadastro-pacientes" , {
+  await fetch ("http://localhost:3000/cadastro-pacientes" , {
       method: "POST",
       headers: {
           'Accept': 'application/json, text/plain, /',
@@ -210,7 +210,7 @@ BtnSalvarCadastro.addEventListener('click', saveCadastro )
 
 const deletarCadastro = async (id) => {
   console.log(deletarCadastro)
-  await fetch (`https://projeto-final-arnia.onrender.com/cadastro-pacientes/${id}` ,{
+  await fetch (`http://localhost:3000/cadastro-pacientes/${id}` ,{
       method: 'DELETE'
   })
   getPosts()
@@ -225,7 +225,7 @@ document.querySelector('#excluir').addEventListener('click', deletarCadastro)
 
 const editarCadastro = async (id) => {
  editarId = id 
- const apiResponse = await  fetch (`https://projeto-final-arnia.onrender.com/cadastro-pacientes/${id}`)
+ const apiResponse = await  fetch (`http://localhost:3000/cadastro-pacientes/${id}`)
  const posts = await apiResponse.json()
 
     document.querySelector('#edit-cpf').value = posts.cpf
@@ -302,7 +302,7 @@ function abrirProntuario (id)  {
 
  const dadosPaciente = async (id) => {
   editarId = id 
-  const apiResponse = await  fetch (`https://projeto-final-arnia.onrender.com/cadastro-pacientes/${id}`)
+  const apiResponse = await  fetch (`http://localhost:3000/cadastro-pacientes/${id}`)
   const posts = await apiResponse.json()
  
      document.querySelector('#dados-cpf').value = posts.cpf
@@ -326,7 +326,23 @@ function abrirProntuario (id)  {
     
      
  }
- console.log(dadosPaciente)
+ const closemiModal = document.querySelector('#btn-fecharSucesso');
+ const miModal = document.querySelector('#card-sucesso');
+ //const BtnSalvarCadastro = document.querySelector('#criar-newPaciente');
+ 
+ async function sucesso() {
+   await miModal.close();
+ }
+ 
+ BtnSalvarCadastro.addEventListener('click', async () => {
+   miModal.showModal(); 
+   setTimeout(sucesso , 5000);  
+ });
+ 
+ closemiModal.addEventListener('click', () => {
+   saveCadastro(); // aqui você precisa definir o que a função saveCadastro() faz
+ });
+ 
 
 
 

@@ -38,42 +38,23 @@
       "mae": "Maria",
       "pai": "Gerson",
       "id": 3
-    }
-  ],
-  "sessoesPaciente": [
-    {
-      "data": "",
-      "horaInicio": "",
-      "horaFinal": "",
-      "titulo": "",
-      "resumo": "",
-      "idPaciente": 1,
-      "id": 1
     },
     {
-      "data": "",
-      "horaInicio": "",
-      "horaFinal": "",
-      "titulo": "",
-      "resumo": "",
-      "idPaciente": 1,
-      "id": 2
+      "cpf": "",
+      "nome": "",
+      "dataNascimento": "",
+      "email": "",
+      "genero": "Escolha uma opção",
+      "nacionalidade": "Escolha uma opção",
+      "naturalidade": "",
+      "profissao": "",
+      "ensino": "Escolha uma opção",
+      "estadoCivil": "Escolha uma opção",
+      "mae": "",
+      "pai": "",
+      "id": 4
     }
   ],
-  "fatoRelevante": [
-    {
-      "data": "",
-      "titulo": "",
-      "descricao": "",
-      "idPaciente": 1,
-      "id": 1
-    },
-    {
-      "data": "",
-      "titulo": "",
-      "descricao": "",
-      "idPaciente": 1,
-      "id": 2
-    }
-  ]
+  "sessoesPaciente": [],
+  "fatoRelevante": []
 }

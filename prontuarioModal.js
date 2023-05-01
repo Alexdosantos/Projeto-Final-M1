@@ -60,6 +60,17 @@ openModalSair.onclick = function () {
     modalSair.style.display = 'none'
  }
 };
-function fecharAgora() {
-  modalSair.style.display = 'none'
-};
+
+
+
+const openModalmini = document.querySelector('#opcoes')
+const modalmini = document.querySelector('#cardEdit-Exclui')
+
+function abrirMinimodalSessao() {
+    if(modalmini.style.display === "none")  {
+        modalmini.style.display = "flex"
+    }else  {
+        modalmini.style.display = "none"
+    }
+}
+openModalmini.addEventListener('click' , abrirMinimodalSessao)

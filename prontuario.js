@@ -6,7 +6,7 @@ const id = parametros.get('id');
 // carregar dados do paciente com o ID especificado
 async function carregarDadosPaciente() {
   try {
-    const api = await fetch(`https://projeto-final-arnia.onrender.com/cadastro-pacientes/${id}`);
+    const api = await fetch(`http://localhost:3000/cadastro-pacientes/${id}`);
     const paciente = await api.json();
 
     const nome = paciente.nome;
@@ -32,7 +32,7 @@ carregarDadosPaciente();
 //  AQUI REALIZA O MÉTODO DE POST PARA SALVAR OS DADOS DA SESSÃO
 const salveSessao = async () => {
     try {
-      const api = await fetch('https://projeto-final-arnia.onrender.com/sessoesPaciente', {
+      const api = await fetch('http://localhost:3000/sessoesPaciente', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -60,7 +60,7 @@ const salveSessao = async () => {
 // AQUI REALIZA O MÁTODO POST PARA SALVA OS DADOS EM FOTO RELEVANTE
   const salveFatoRelenate = async () => {
     try {
-      const api = await fetch('https://projeto-final-arnia.onrender.com/fatoRelevante', {
+      const api = await fetch('http://localhost:3000/fatoRelevante', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -84,12 +84,13 @@ const salveSessao = async () => {
   document.querySelector('#btn-criarFatoRelevante').addEventListener('click', salveFatoRelenate);
 
 
+  
 
 
 
 const dadoSessao = async () =>  {
     const postSessao = document.querySelector('#cardsessaonew')
-    const apiSessao = await fetch (` https://projeto-final-arnia.onrender.com/sessoesPaciente?idPaciente=${id}`)
+    const apiSessao = await fetch (`http://localhost:3000/sessoesPaciente?idPaciente=${id}`)
     const newdados =  await apiSessao.json()
     let conteudo = ''
     
@@ -102,13 +103,13 @@ const dadoSessao = async () =>  {
             <div> 
                 
 
-                <div onclick="abrirSessaoValore(${news.id})"class="cardSessao">
+                <div class="cardSessao">
                     <div class="corverde"></div>
                     
                     <img class="img1" src="/assets/logo sessão.svg" alt="">
                     
                         <h4>Sessão 01</h4>
-                        <button id="opcoes"><img src="/assets/3 pontos.svg"alt=""></button>
+                        <button onclick= "abrirMinimodalSessao(${news.id})" id="opcoes"><img src="/assets/3 pontos.svg"alt=""></button>
 
                     
                     
@@ -123,7 +124,7 @@ const dadoSessao = async () =>  {
         
     })
     postSessao.innerHTML = conteudo
-    //window.location.href = `prontuario.html?id=${id}`
+    
     
     
     
@@ -135,7 +136,7 @@ window.addEventListener('DOMContentLoaded' , dadoSessao)
 const dadosfatoRelevante = async () =>  {
    
     const postfato = document.querySelector('#section-fatoRelevante')
-    const apifato = await fetch (` https://projeto-final-arnia.onrender.com/fatoRelevante?idPaciente=${id}`)
+    const apifato = await fetch (` http://localhost:3000/fatoRelevante?idPaciente=${id}`)
     const newfato =  await apifato.json()
     let conteudo = ''
 
