@@ -8,11 +8,11 @@ openModalProntuario.onclick = function() {
     
 }
 
-closeProntuario.onclick = fecharModal;
-cancelarProntuario.onclick = fecharModal;
+closeProntuario.onclick = fecharModal
+cancelarProntuario.onclick = fecharModal
 
 function fecharModal() {
-    modalProntuario.close();
+    modalProntuario.close()
 }
 
 
@@ -27,11 +27,11 @@ openModalfatoRelevante.onclick = function() {
     
 }
 
-closefatoRelevante.onclick = fecharModalFato;
-cancelarfatoRelevante.onclick = fecharModalFato;
+closefatoRelevante.onclick = fecharModalFato
+cancelarfatoRelevante.onclick = fecharModalFato
 
 function fecharModalFato() {
-    modalfatoRelevante.close();
+    modalfatoRelevante.close()
     
 }
 
@@ -59,7 +59,7 @@ openModalSair.onclick = function () {
   } else {
     modalSair.style.display = 'none'
  }
-};
+}
 
 
 

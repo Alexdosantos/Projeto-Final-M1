@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    let cadastroEmAndamento = false;
+    let cadastroEmAndamento = false
     
     const cadNewUsuario = async (nome, username, password, password1) => {
       const response = await fetch('https://projeto-final-arnia.onrender.com/usuarios', {
@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({ nome, username, password, password1 })
-      });
+      })
     
       if (response.ok) {
         // o usuário foi cadastrado com sucesso
@@ -21,7 +21,7 @@ window.addEventListener('load', () => {
     
     const cadastraNewUser = async () => {
       if (cadastroEmAndamento) {
-        return; // se um cadastro já está em andamento, não faz nada
+        return // se um cadastro já está em andamento, não faz nada
       }
       cadastroEmAndamento = true // marca que um cadastro está em andamento
     
@@ -38,7 +38,7 @@ window.addEventListener('load', () => {
     
     const cadastroSenha = async () => {
       if (cadastroEmAndamento) {
-        return; // se um cadastro já está em andamento, não faz nada
+        return // se um cadastro já está em andamento, não faz nada
       }
       cadastroEmAndamento = true // marca que um cadastro está em andamento
     
@@ -77,7 +77,7 @@ window.addEventListener('load', () => {
         alert('Não foi possível cadastrar o usuário. Tente novamente.')
       }
     
-      cadastroEmAndamento = false; // marca que o cadastro foi finalizado
+      cadastroEmAndamento = false // marca que o cadastro foi finalizado
     }
     
     const cadastrarSenha = document.querySelector('#btn-cadastrarSenha')

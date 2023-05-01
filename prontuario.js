@@ -1,32 +1,32 @@
 // obter o parâmetro "id" da URL
-const parametrosUrl = window.location.search;
-const parametros = new URLSearchParams(parametrosUrl);
-const id = parametros.get('id');
+const parametrosUrl = window.location.search
+const parametros = new URLSearchParams(parametrosUrl)
+const id = parametros.get('id')
 
 // carregar dados do paciente com o ID especificado
 async function carregarDadosPaciente() {
   try {
-    const api = await fetch(`https://projeto-final-arnia.onrender.com/cadastro-pacientes/${id}`);
-    const paciente = await api.json();
+    const api = await fetch(`https://projeto-final-arnia.onrender.com/cadastro-pacientes/${id}`)
+    const paciente = await api.json()
 
-    const nome = paciente.nome;
-    const dataNasc = paciente.dataNascimento;
-    const profissao = paciente.profissao;
-    const ensino = paciente.ensino;
+    const nome = paciente.nome
+    const dataNasc = paciente.dataNascimento
+    const profissao = paciente.profissao
+    const ensino = paciente.ensino
 
     // preencher os campos da página com os dados do paciente
-    document.getElementById('nome-idPaciente').innerHTML = nome;
-    document.getElementById('nasc-idPaciente').innerHTML = dataNasc;
-    document.getElementById('profissao-idPaciente').innerHTML = profissao;
-    document.getElementById('ensino-idPaciente').innerHTML = ensino;
+    document.getElementById('nome-idPaciente').innerHTML = nome
+    document.getElementById('nasc-idPaciente').innerHTML = dataNasc
+    document.getElementById('profissao-idPaciente').innerHTML = profissao
+    document.getElementById('ensino-idPaciente').innerHTML = ensino
   } catch (error) {
-    console.log(error);
+    console.log(error)
   }    
   
   
 }
 
-carregarDadosPaciente();
+carregarDadosPaciente()
 
 
 //  AQUI REALIZA O MÉTODO DE POST PARA SALVAR OS DADOS DA SESSÃO
@@ -45,17 +45,17 @@ const salveSessao = async () => {
           resumo: document.querySelector('#tituloTextModal').value,
           idPaciente: parseInt(id)
         })
-      });
-      const response = await api.json();
-      console.log(response);
+      })
+      const response = await api.json()
+      console.log(response)
     } catch (error) {
-      console.log(error);
+      console.log(error)
     }
     location.reload()
     //window.location.href = `prontuario.html?id=${id}`
-  };
+  }
   
-  document.querySelector('#btn-criarNovasessao').addEventListener('click', salveSessao);
+  document.querySelector('#btn-criarNovasessao').addEventListener('click', salveSessao)
   
 // AQUI REALIZA O MÁTODO POST PARA SALVA OS DADOS EM FOTO RELEVANTE
   const salveFatoRelenate = async () => {
@@ -71,17 +71,17 @@ const salveSessao = async () => {
           descricao: document.querySelector('#tituloFatoModal').value,
           idPaciente: parseInt(id)
         })
-      });
-      const response = await api.json();
-      console.log(response);
+      })
+      const response = await api.json()
+      console.log(response)
     } catch (error) {
-      console.log(error);
+      console.log(error)
     }
     location.reload()
     //window.location.href = `prontuario.html?id=${id}`
-  };
+  }
   
-  document.querySelector('#btn-criarFatoRelevante').addEventListener('click', salveFatoRelenate);
+  document.querySelector('#btn-criarFatoRelevante').addEventListener('click', salveFatoRelenate)
 
 
   

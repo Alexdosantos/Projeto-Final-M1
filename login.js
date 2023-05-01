@@ -35,11 +35,11 @@ const loginUsuario = async () => {
         alert('Nome de usuário ou senha incorretos. Tente novamente.')
     }
 }
-document.querySelector('#btn-entrar').addEventListener('click', loginUsuario);
+document.querySelector('#btn-entrar').addEventListener('click', loginUsuario)
 
 
 
-const apiUrl = 'https://projeto-final-arnia.onrender.com/usuarios';
+const apiUrl = 'https://projeto-final-arnia.onrender.com/usuarios'
 
 const cadNewUsuario = async (username, password) => {
   try {
@@ -52,13 +52,13 @@ const cadNewUsuario = async (username, password) => {
     });
 
     if (response.ok) {
-      return true;
+      return true
     } else {
-      return false;
+      return false
     }
   } catch (error) {
-    console.error(error);
-    return false;
+    console.error(error)
+    return false
   }
 };
 

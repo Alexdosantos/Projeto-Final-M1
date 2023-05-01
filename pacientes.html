@@ -13,41 +13,36 @@
 </head>
 <body >
 
-   <main >
+   <main>
 
         <header>
             <img src="/assets/logo meus pacientes.png" alt=""> 
             <div class="welcome"> 
                 <div class="welcome-name">
-                    <div class="bem-vindo">
-                      <p>Bem vindo(a),</p>
-                      <span class="name-bold">Alex</span>
-                      <button id="btn-sairPacientes"><i class="fa-solid fa-2xl fa-caret-down"></i></button> 
-                    </div> 
-                    <!-- <h4 class="name">Daniel</h4> -->
-                    
-                
-                 
-                <div id="modal-sairPagina">
-                    
-                    <p class="medico">Adm</p>
-                    <p class="email-medico"></p>
-                    <img src="/assets/medicos.jpg" alt="">
-                    
-                    <div class="sair-geral">
-                      <i class="fa-solid fa-arrow-turn-up"style="color: #1fb257;"></i>
-                      <a href="/index.html">Sair</a>
-                    </div>
-                    
-                  </div>
-                    
-                
+                          <div class="bem-vindo">
+                            <p>Bem vindo(a),</p>
+                            <span class="name-bold">Alex</span>
+                            <button id="btn-sairPacientes"><i class="fa-solid fa-2xl fa-caret-down"></i></button> 
+                          </div> 
+                          
+                          
+                      
+                      
+                      <div id="modal-sairPagina">
+                          
+                          <p class="medico">Adm</p>
+                          <p class="email-medico"></p>
+                          <img src="/assets/medicos.jpg" alt="">
+                          
+                          <div class="sair-geral">
+                            <i class="fa-solid fa-arrow-turn-up"style="color: #1fb257;"></i>
+                            <a href="/index.html">Sair</a>
+                          </div>
+                          
+                        </div>
                 </div>
+            </div>    
                 
-                <!-- <dialog open="" id="modal-sairPagina">
-                  <p>alex@yahoo.com</p>
-                  <a href="/index.html">sair</a>
-                </dialog> -->
                 
           </header>
 
@@ -59,27 +54,23 @@
         
         <section  id="section-card">
             <div class="btn-cadastroPaciente">
-             <button class="btn-cad" id="btn-cad">
-                 <i class="fa-solid fa-circle-plus" style="color: #ffffff;"></i>
-                 Novo Cadastro
-             </button>  
-             
-            
-                 
-                 <div class="btn-search">
-                     <input type="text"  id="input-btn" placeholder="Pesquisar">
-                     <button id="btn-FiltrarPacients">
-                         
-                         <i class="fa-solid fa-magnifying-glass"><span></span></i>  Filtrar
-                     </button>
-     
-                 </div>
-                 
-     
+              <button class="btn-cad" id="btn-cad">
+                  <i class="fa-solid fa-circle-plus" style="color: #ffffff;"></i>
+                  Novo Cadastro
+              </button>  
+              
+              
+                  <div class="btn-search">
+                      <input type="text"  id="input-btn" placeholder="Pesquisar">
+                      <button id="btn-FiltrarPacients">
+                          <i class="fa-solid fa-magnifying-glass"><span></span></i>  Filtrar
+                      </button>
+      
+                  </div>
             </div> 
              
      
-                 <table id="content">
+                <table id="content">
                      <thead>
                        <tr>
                          <th>Código</th>
@@ -89,20 +80,18 @@
                        </tr>
                      </thead>
                      <tbody>
-                       <tr>
-                         <td></td>
-                         <td id="testeJoao"></td>
-                         <td></td>
-                         <td class="btn-pacientes">
-                           <button class="agenda" id="agenda"><i class="fa-solid fa-calendar-minus" style="color: #017849;"></i></button>
-                           <button class="editar" id="editar" ><i class="fa-solid fa-pen" style="color: #2f80ed;"></i></i></button>
-                           <button class="excluir" id="excluir"><i class="fa-solid fa-trash-can" style="color: #eb5757;"></i></button>
-                         </td>
-                       </tr>
-                       
-                       
-                     </tbody>
-                   </table>
+                        <tr>
+                          <td></td>
+                          <td id="testeJoao"></td>
+                          <td></td>
+                          <td class="btn-pacientes">
+                            <button class="agenda" id="agenda"><i class="fa-solid fa-calendar-minus" style="color: #017849;"></i></button>
+                            <button class="editar" id="editar" ><i class="fa-solid fa-pen" style="color: #2f80ed;"></i></i></button>
+                            <button class="excluir" id="excluir"><i class="fa-solid fa-trash-can" style="color: #eb5757;"></i></button>
+                          </td>
+                        </tr>
+                      </tbody>
+                </table>
                    
      
          </section>  
@@ -127,24 +116,24 @@
     <dialog   class="modal-new-Paciente" id="modal-new-Paciente">
       <form action="">
           <div class="header-modal" >
-            <h4>Novo pacientes</h4>
-            <button class="close-modal" id="close-modal"><i class="fa-sharp fa-2xl fa-solid fa-circle-xmark"   style="color: #09121f;"></i></button>
+              <h4>Novo pacientes</h4>
+              <button class="close-modal" id="close-modal"><i class="fa-sharp fa-2xl fa-solid fa-circle-xmark"   style="color: #09121f;"></i></button>
           </div>
 
           <div class="grid-pai">
               <div class="grid-modal">
-                <label for="" class="cpf" >CPF</label>
-                <input type="text" id="cpf" class="CPF" placeholder="Digite" required>
+                  <label for="" class="cpf" >CPF</label>
+                  <input type="text" id="cpf" class="CPF" placeholder="Digite" required>
               </div>
     
               <div class="grid-modal">
-                <label for="" class="nome">Nome</label>
-                <input type="text" id="nome" class="CPF" placeholder="Digite" required>
+                  <label for="" class="nome">Nome</label>
+                  <input type="text" id="nome" class="CPF" placeholder="Digite" required>
               </div>
     
               <div class="grid-modal">
-                <label for="" class="dateNas">Data de  Nascimento</label>
-                <input type="date" id="dataNascimento" class="CPF" placeholder="Digite" required >
+                  <label for="" class="dateNas">Data de  Nascimento</label>
+                  <input type="date" id="dataNascimento" class="CPF" placeholder="Digite" required >
               </div>
   
           </div>
@@ -152,25 +141,24 @@
         
           <div class="grid-pai1">
                       <div class="grid-modal">
-                        <label for="" class="email" >E-mail</label>
-                        <input type="text" id="email" placeholder="Digite" required>
+                          <label for="" class="email" >E-mail</label>
+                          <input type="text" id="email" placeholder="Digite" required>
                       </div>
             
                       <div class="grid-modal">
                         <label for="escolha" class="genero">Sexo/Gênero</label>
-                          <select id="genero" name="escolha" placeholder="Digite" required>
-                            <option>Escolha uma opção</option>
-                            <option value="masculino">Masculino</option>
-                            <option value="feminino">Feminino</option>
-                          </select>
+                            <select id="genero" name="escolha" placeholder="Digite" required>
+                                <option>Escolha uma opção</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                            </select>
                             <!--
                               <label for="" class="genero">Sexo/Gênero</label>
                               <input type="text"  placeholder="Digite">
-
+                              
                             -->
-                        
                       </div>
-                      
+                            
                       
                       <div class="grid-modal">
                             <label for="nacionalidade" class="nacionalidade">Nacionalidade:</label>
@@ -189,52 +177,52 @@
           </div>  
 
           <div class="grid-pai2">
-            <div class="grid-modal">
-              <label for=""  class="naturalidade">Naturalidade</label>
-              <input type="text" id="naturalidade" placeholder="Digite" required>
-            </div>
+              <div class="grid-modal">
+                  <label for=""  class="naturalidade">Naturalidade</label>
+                  <input type="text" id="naturalidade" placeholder="Digite" required>
+              </div>
   
-            <div class="grid-modal">
-              <label for="" class="profissao">Profissão</label>
-              <input type="text" id="profissao" placeholder="Digite" required>
-            </div>
+              <div class="grid-modal">
+                  <label for="" class="profissao">Profissão</label>
+                  <input type="text" id="profissao" placeholder="Digite" required>
+              </div>
   
-            <div class="grid-modal">
-              
-                <label for="escolha" class="escolaridade">Escolaridade</label>
-                <select id="ensino" name="escolha" placeholder="Digite" required>
-                    <option>Escolha uma opção</option>
-                    <option value="Ensino-Fundamental">Ensino Fundamental</option>
-                    <option value="Ensino-medio">Ensino Médio</option>
-                    <option value="Gradução">Gradução</option>
-                    <option value="Mestrado">Mestrado</option>
-                            
-                </select>
-            </div>
+              <div class="grid-modal">
+                
+                  <label for="escolha" class="escolaridade">Escolaridade</label>
+                  <select id="ensino" name="escolha" placeholder="Digite" required>
+                      <option>Escolha uma opção</option>
+                      <option value="Ensino-Fundamental">Ensino Fundamental</option>
+                      <option value="Ensino-medio">Ensino Médio</option>
+                      <option value="Gradução">Gradução</option>
+                      <option value="Mestrado">Mestrado</option>
+                              
+                  </select>
+              </div>
 
           </div>
 
           <div class="grid-pai2">
-            <div class="grid-modal">
-              
-                <label for="escolha" class="estado-civil">Estado Civil</label>
-                <select id="estadoCivil" name="escolha" placeholder="Digite" required>
-                    <option>Escolha uma opção</option>
-                    <option value="solteiro">Solteiro</option>
-                    <option value="casado">Casado</option>
-                    <option value="divorsiado">Divorsiado</option>
-                    <option value="viuvo">Viúvo</option>
-                            
-                </select>
-            </div>
+              <div class="grid-modal">
+                
+                  <label for="escolha" class="estado-civil">Estado Civil</label>
+                  <select id="estadoCivil" name="escolha" placeholder="Digite" required>
+                      <option>Escolha uma opção</option>
+                      <option value="solteiro">Solteiro</option>
+                      <option value="casado">Casado</option>
+                      <option value="divorsiado">Divorsiado</option>
+                      <option value="viuvo">Viúvo</option>
+                              
+                  </select>
+              </div>
                   <div class="grid-modal">
-                    <label for="" class="mae">Mãe</label>
-                    <input type="text" id="mae" placeholder="Digite" required>
+                      <label for="" class="mae">Mãe</label>
+                      <input type="text" id="mae" placeholder="Digite" required>
                   </div>
         
                   <div class="grid-modal">
-                    <label for="" class="pai">Pai</label>
-                    <input type="text" id="pai"  placeholder="Digite" required>
+                        <label for="" class="pai">Pai</label>
+                        <input type="text" id="pai"  placeholder="Digite" required>
                   </div>
   
           </div> 
@@ -249,10 +237,6 @@
                
                 <button class="criar-newPaciente" type="button" id="criar-newPaciente">Criar</button>
               </div>
-
-
-
-
           </div>
             
             
@@ -265,10 +249,10 @@
 
     <dialog  class="editar-pacientes" id="editar-pacientes">
      <form action="">
-      <div class="header-modal" >
-        <h4>Editar dados do paciente</h4>
-        <button id="close-modal-editPacientes"><i class="fa-sharp fa-2xl fa-solid fa-circle-xmark"   style="color: #09121f;"></i></button>
-      </div>
+        <div class="header-modal" >
+            <h4>Editar dados do paciente</h4>
+            <button id="close-modal-editPacientes"><i class="fa-sharp fa-2xl fa-solid fa-circle-xmark"   style="color: #09121f;"></i></button>
+        </div>
 
       <div class="grid-pai">
           <div class="grid-modal">
