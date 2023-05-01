@@ -336,7 +336,7 @@ function abrirProntuario (id)  {
  
  BtnSalvarCadastro.addEventListener('click', async () => {
    miModal.showModal(); 
-   setTimeout(sucesso , 5000);  
+   setTimeout(sucesso , 9000);  
  });
  
  closemiModal.addEventListener('click', () => {

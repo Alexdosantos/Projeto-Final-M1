@@ -38,23 +38,18 @@
       "mae": "Maria",
       "pai": "Gerson",
       "id": 3
-    },
-    {
-      "cpf": "",
-      "nome": "",
-      "dataNascimento": "",
-      "email": "",
-      "genero": "Escolha uma opção",
-      "nacionalidade": "Escolha uma opção",
-      "naturalidade": "",
-      "profissao": "",
-      "ensino": "Escolha uma opção",
-      "estadoCivil": "Escolha uma opção",
-      "mae": "",
-      "pai": "",
-      "id": 4
     }
   ],
-  "sessoesPaciente": [],
+  "sessoesPaciente": [
+    {
+      "data": "",
+      "horaInicio": "",
+      "horaFinal": "",
+      "titulo": "",
+      "resumo": "",
+      "idPaciente": 3,
+      "id": 1
+    }
+  ],
   "fatoRelevante": []
 }
