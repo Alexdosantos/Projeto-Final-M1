@@ -49,9 +49,8 @@ const getPosts = async () => {
 }
 
 window.addEventListener('DOMContentLoaded', getPosts)
-//
 
-// fILTRA PACIENTES 
+
 
 const filtrarPacientes = async (nome) => {
   const apiResponse = await fetch(`https://projeto-final-arnia.onrender.com/cadastro-pacientes?nome_like=${nome}`)
@@ -326,6 +325,23 @@ function abrirProntuario (id)  {
  }
  
  
+const cpfInput = document.getElementById('cpf')
 
+cpfInput.addEventListener('input' ,  function(e) {
+  let cpf = e.target.value
+  cpf = cpf.replace(/\D/g, '')
+  cpf = cpf.replace(/^(\d{3})(\d{3})(\d{3})(\d{2})$/, '$1.$2.$3-$4'); // Formata o CPF com pontos e hífen
+    e.target.value = cpf;
+ 
+})
 
+const cpfInputEdit = document.getElementById('edit-cpf')
+
+cpfInputEdit.addEventListener('input' ,  function(e) {
+  let cpf = e.target.value
+  cpf = cpf.replace(/\D/g, '')
+  cpf = cpf.replace(/^(\d{3})(\d{3})(\d{3})(\d{2})$/, '$1.$2.$3-$4'); // Formata o CPF com pontos e hífen
+    e.target.value = cpf;
+ 
+})
 
