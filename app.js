@@ -1,6 +1,6 @@
 
 // AQUI É ONDE PEGO NOME E USERNAME NO LOCALSTORAGE E PASSA PARA PARTE DE BEM VINDO 
-const nome =localStorage.getItem('nome')
+const nome = localStorage.getItem('nome')
 const primeiroNome = nome.split(' ')[0]
 document.querySelector('.name-bold').innerHTML = primeiroNome
 

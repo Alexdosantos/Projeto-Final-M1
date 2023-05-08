@@ -7,7 +7,7 @@
 
 
 header {
-    
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 100vw;
@@ -24,6 +24,22 @@ header img {
     height: 44.33px;
     margin-top: 18.21px;
     margin-left: 26px;
+}
+
+.voltarListagem{
+    position: absolute;
+    top: 34px;
+    left: 80px;
+    text-decoration: none;
+
+
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 138.5%;
+   
+    color: #212121;
 }
 .welcome {
     position: relative;
@@ -379,7 +395,7 @@ td:nth-child(2) {
 }
   
 td:nth-child(3) {
-    width: 45%;
+    width: 40%;
     
 }
   
